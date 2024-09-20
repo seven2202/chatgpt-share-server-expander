@@ -29,12 +29,12 @@ services:
     environment:
       TZ: Asia/Shanghai # 指定时区
       # 接入网关地址
-      CHATPROXY: "https://lyy0709xyhelper.lyy0709.xyz" # 网关记得更换
+      CHATPROXY: "https://xxx.xxx.xxx" # 网关记得更换
       # 接入网关的authkey
       AUTHKEY: "xyhelper"
       # 内容审核及速率限制
       AUDIT_LIMIT_URL: "http://chatgpt-share-server-expander:8888/auditLimit"
-      OAUTH_URL: https://gpt.freeuse.top/api/user/oauth # 请把xxx的地方更换为自己的域名
+      OAUTH_URL: https://xxx.xxx.xxx/api/user/oauth # 请把xxx的地方更换为自己的域名
     volumes:
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
