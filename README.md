@@ -43,7 +43,7 @@ curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expa
 
 ## 新建一个php项目或者反代项目都可
 
-![image](https://github.com/user-attachments/assets/e3a8a29a-d515-4611-bd30-5583603621bf)
+![Uploading image.png…]()
 
 ## 点击你新建好的项目，进行反代配置
 
