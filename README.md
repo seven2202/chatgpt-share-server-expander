@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/20618850-6f92-4fe4-8610-d1b0c9589a7f)# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
+# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude，拥有较为完整的用户管理体系。
