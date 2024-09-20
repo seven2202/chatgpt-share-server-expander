@@ -32,7 +32,7 @@ https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 # 快速部署
 ```
-curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/deploy/quick-install.sh | bash
 ```
 # 启动配置
 ### 需要填写网关地址
@@ -292,7 +292,7 @@ reverse_proxy localhost:8300
 
 先用一键脚本部署程序，**建议不要放在和原来share程序一个地方**！！！
 ```
-curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/deploy/quick-install.sh | bash
 ```
 
 ## 迁移旧系统的数据
