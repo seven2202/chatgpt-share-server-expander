@@ -1,47 +1,33 @@
-# chatgpt-share-server-expander
+# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
+#### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
+# chatgpt-share-server-expander(付费版)
+#### 同时支持ChatGPT和claude，拥有较为完整的用户管理体系。
+#### 支持暗黑模式和多语言，用户使用速率单独控制。支持站内（易支付、当面付、虎皮椒）和站外支付等。
+#### 全款49.9￥/月，无任何其他费用，支持用户数据迁移。最主要的是新增功能不收费，也不会根据用户数去阶梯收费喔。
+### 本项目我愿称之为【觉醒吧，韭菜们】
 
-#### 基于chatgpt-share-server开发的外挂程序，属于增强收费版。
-#### 同时支持ChatGPT和claude，拥有较为完整的用户管理体系。支持暗黑模式和多语言。支持站内和站外支付等。
-#### 49.9￥/月，不限制用户人数。
-
-# 功能介绍
-## 用户端：
+# 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持免费、4o、plus、claude节点划分
-- 支持站内支付、卡密购买、兑换。
-- 支持系统通知、站内公告、使用说明
-- 支持暗黑模式
-- 支持多语言（英汉）
+- 支持站内支付（虎皮椒、易支付、当面付）、卡密购买、兑换。
+- 支持系统通知、站内公告、使用说明设置
+- 支持暗黑模式和多语言
 - 支持客服脚本
-- 支持优惠卷折扣功能
-- 免登进入选车页面，使用功能才需要登录
-- 新增个人中心（查看用户信息、修改密码、查看邀请人、邀请用户）
-## 管理端：
-管理端需要重构，之前想集成进去，后面功能越写越多...
-- 支持用户数据统计（粗糙，请忽略）
-- 支持批量导入ChatGPT 账号，不需要一个个添加。
-- 支持Claude session账号添加。
-- 用户管理
-- 系统通知
-- 订阅管理
-- 订单管理
-- 支付管理、支付成功邮件通知管理员
-- 优惠卷管理
-- 卡密管理
-- 系统配置
+- 支持免登进入选车页面
+- 支持邀请功能（复制邀请码、查看邀请人信息）
+- 支持用户数据统计
+- 支持批量获取gpt session功能
+- 支持claude session管理功能
+- 支持订阅管理
+- 支持订单管理
+- 支持卡密管理
+- 支持虚拟车队
+- 支持优惠卷管理功能
+- 更多功能
 
-# 更新日志
+# 更新日志及开发计划
 
-2024-09-01
-- 新增单个gpt账号添加功能
-  
-# 近期更新计划
-
-- 管理端界面重构
-- 完善其他支付方式（当面付、虎皮椒...）
-- 完善其他登录方式（微信登录、手机号登录）
-- 用户速率独立设置
-- claude次数统计功能
+https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 
 # 快速部署
@@ -49,13 +35,12 @@
 curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/deploy/quick-install.sh | bash
 ```
 # 启动配置
+### 需要填写网关地址
+### 需要填写站点域名。
+### 更多配置可以去docker compose.yml文件中修改，然后执行一下restart.sh脚本。
+![1726714190503](https://github.com/user-attachments/assets/7c87e475-d751-4d68-a4e7-f640216e1881)
 
-## 修改docker compose文件
-
-![image](https://github.com/user-attachments/assets/adb7f6da-0c42-41ba-85db-b7f1f32449c0)
-
-
-# 配置
+# nginx配置方式
 
 ## 新建一个php项目或者反代项目都可
 ![image](https://github.com/user-attachments/assets/91643de3-794c-4a84-88ee-d598c7bdfb0a)
@@ -75,8 +60,9 @@ curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expa
 
 ![image](https://github.com/user-attachments/assets/2007ba58-e028-4d76-afa9-e3ec7a3f5f98)
 
+# nginx和caddy选择其中一种即可
 
-## nginx 新增反代信息
+## nginx 新增反代信息（方式一）
 
 复制粘贴即可，存在重复的属性就删除它
 
@@ -97,6 +83,30 @@ location /app/ {
 }
 location /api/ {
     proxy_pass http://localhost:8400/api/;
+}
+```
+# caddy配置方式（方式二）
+
+找到你的caddy配置文件,把xxx.com改成自己的域名
+
+```
+xxx.com {
+
+   handle_path /list {
+        rewrite * /app/index.html
+        reverse_proxy localhost:8400
+        }
+
+   handle /api/* {
+        reverse_proxy localhost:8400
+        }
+
+   handle /app/* {
+        reverse_proxy localhost:8400
+        }
+
+reverse_proxy localhost:8300
+
 }
 ```
 
@@ -165,53 +175,68 @@ location /api/ {
 ![image](https://github.com/user-attachments/assets/690eb933-62cc-4f60-91eb-5037b380a20b)
 
 
-# 管理后台展示（辣眼睛）
+# 管理后台展示
 
 ## 管理后台入口
 只有admin管理员账号才显示此入口
 ![image](https://github.com/user-attachments/assets/5072b433-e84f-4c58-bd84-051ebce3e6f4)
 
 ## 数据统计（粗糙）
-![image](https://github.com/user-attachments/assets/d9e08504-70f4-4945-90fb-2613b26eaad8)
+![image](https://github.com/user-attachments/assets/6bfedc99-f193-4940-9bbf-063d9ebae2e5)
+
 
 ## gpt 账号管理
-![image](https://github.com/user-attachments/assets/ead899a0-24df-4340-a858-2a03a649d8b7)
+![image](https://github.com/user-attachments/assets/be3ef772-ead5-4ec8-b27c-f41d24d917f0)
+
 
 ## claude 账号管理
-![image](https://github.com/user-attachments/assets/596ca1ea-57c7-401a-8745-e73ac8e96ef8)
+![image](https://github.com/user-attachments/assets/85f8010c-2290-48f0-a045-6f3ae340f72f)
+
 
 ## 用户管理
-![image](https://github.com/user-attachments/assets/9fb8fedd-76f8-4851-a4a7-29659d59bcf3)
+![image](https://github.com/user-attachments/assets/57961bab-087a-4270-b513-5f34a52b8a72)
+
 
 ## 公告管理
-![image](https://github.com/user-attachments/assets/bdc4bfc2-1e32-4335-a551-5b658e1c27c9)
+![image](https://github.com/user-attachments/assets/c005f369-ba34-4832-9b4b-99efcf80a5c2)
+
 
 ## 订阅管理
-![image](https://github.com/user-attachments/assets/615377b7-882d-455d-8229-a8e49ec3c3b6)
+![image](https://github.com/user-attachments/assets/ea8bde82-72c6-4ea2-bc0b-9de39a411148)
+
 
 ## 订单管理
-![image](https://github.com/user-attachments/assets/79c37624-2d94-4888-b0e5-0a5275e8f0dd)
+![image](https://github.com/user-attachments/assets/d43030d6-3f54-4109-9999-1fd7ac016b03)
+
 
 ## 支付管理
-有空再完善其他支付方式吧，预留了。
-![image](https://github.com/user-attachments/assets/50df0efa-1988-4519-9a19-cd8292c570ef)
+![image](https://github.com/user-attachments/assets/3e55002c-f52f-489d-b0f1-705c3aa23b50)
+
 
 ## 优惠卷管理
-![image](https://github.com/user-attachments/assets/ea6b3e12-fbf8-4bab-99ed-84fb4eaaf439)
+![image](https://github.com/user-attachments/assets/ede44377-244e-4b2c-ad10-252ae885c7d6)
+
 
 ## 卡密管理
-![image](https://github.com/user-attachments/assets/31fb589d-cf47-4bc1-a416-57509c9b2431)
+![image](https://github.com/user-attachments/assets/b602398e-e34f-40bf-9ec7-92a51a2e5428)
+
 
 ## 系统配置
 
+![image](https://github.com/user-attachments/assets/2ec71264-5cde-4291-8537-eaca7683bf88)
+
+
 ### 会员设置
-![image](https://github.com/user-attachments/assets/e09cdf1f-5754-4d7f-8218-43c077d1cd53)
+![image](https://github.com/user-attachments/assets/d3c7a1ed-f672-4b94-a975-f1d53a7e3f37)
+
 
 ### 邮箱设置
-![image](https://github.com/user-attachments/assets/3c374cf5-ed62-48fb-9506-cfe62a7ff6f8)
+![image](https://github.com/user-attachments/assets/faa0cb35-b411-40a2-b97b-7b7446082c74)
 
-### 其他配置（粗糙）
-![image](https://github.com/user-attachments/assets/dba1fa38-17d2-41d9-8563-10169bf02fc1)
+
+### 其他配置
+![image](https://github.com/user-attachments/assets/1872724c-d033-4148-ba12-4db8e2e8056c)
+
 
 # 选车页面手机端显示
 ![image](https://github.com/user-attachments/assets/d058d20d-df73-41a0-b649-ab8015387a00)
@@ -220,10 +245,11 @@ location /api/ {
 ![image](https://github.com/user-attachments/assets/cb0d7ee3-5032-4de2-ab57-f20217bc89f6)
 ![image](https://github.com/user-attachments/assets/5b2dcd8a-6a88-4dcd-a005-888129b9810e)
 
-# 如果这种情况，请联系我ip过白。
+# 如果访问受限，请联系我ip过白。
 ![image](https://github.com/user-attachments/assets/ef396127-ceac-436a-a76c-51b33e938a78)
 
-![image](https://github.com/user-attachments/assets/7cdd347a-dc56-4d97-8dcf-48ef37d040f3) 
+![01fdf29f9db4e530174832ea6d9d77b](https://github.com/user-attachments/assets/620b8cce-f84f-42f9-a650-ada01229b1bd)
+
 
 # 如果搞不定，提供有偿部署服务
 
@@ -262,17 +288,8 @@ docker compose exec -T mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" c
 
 ### 更新用户权益
 
-进入mysql的容器中，执行以下更新sql，迁移旧完成了。
+![image](https://github.com/user-attachments/assets/c8707258-55c9-42e1-ae90-707ee27b64ee)
 
-```
-UPDATE chatgpt_user AS u1
-JOIN (
-    SELECT id, expireTime 
-    FROM chatgpt_user 
-    WHERE deleted_at IS NULL AND isPlus = 1
-) AS u2 ON u1.id = u2.id  
-SET u1.plusExpireTime = u2.expireTime
-WHERE u1.deleted_at IS NULL;
-```
+执行后，会同步原有用户的plus权益，迁移后只需要执行一次即可。
 
 
