@@ -1,4 +1,4 @@
-# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
+![image](https://github.com/user-attachments/assets/20618850-6f92-4fe4-8610-d1b0c9589a7f)# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude，拥有较为完整的用户管理体系。
@@ -32,27 +32,25 @@ https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 # 快速部署
 ```
-curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/deploy/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/quick-install.sh | bash
 ```
 # 启动配置
 ### 需要填写网关地址
 ### 需要填写站点域名。
 ### 更多配置可以去docker compose.yml文件中修改，然后执行一下restart.sh脚本。
-![1726714190503](https://github.com/user-attachments/assets/7c87e475-d751-4d68-a4e7-f640216e1881)
 
 # nginx配置方式
 
 ## 新建一个php项目或者反代项目都可
-![image](https://github.com/user-attachments/assets/91643de3-794c-4a84-88ee-d598c7bdfb0a)
 
 ![image](https://github.com/user-attachments/assets/e3a8a29a-d515-4611-bd30-5583603621bf)
 
 ## 点击你新建好的项目，进行反代配置
 
-![image](https://github.com/user-attachments/assets/d539ad98-de8f-4e92-8015-06449e7073e7)
+![image](https://github.com/user-attachments/assets/e32f6d65-6035-4106-b20c-fcbc8e3908d7)
 
+![image](https://github.com/user-attachments/assets/870082a7-a0e9-499f-b501-4641a9864424)
 
-![image](https://github.com/user-attachments/assets/21fe38e1-0f34-44ba-adaf-ee61d0295d0b)
 
 ## 点击配置文件开始进行nginx配置
 ![image](https://github.com/user-attachments/assets/4ef56575-57e8-4bb7-87e2-864f22158664)
@@ -115,140 +113,136 @@ reverse_proxy localhost:8300
 # 前端界面展示
 
 ## 登录页面
-![image](https://github.com/user-attachments/assets/1da69242-54f8-407c-973e-f9e71fd4cc55)
+![image](https://github.com/user-attachments/assets/ef66aeb1-f162-429d-a756-25ab90b25e54)
 
 ## 注册页面
-![image](https://github.com/user-attachments/assets/a3e36c6b-de06-4c39-8037-80700646d025)
+![image](https://github.com/user-attachments/assets/3d82b33b-3666-4289-8ef0-1d3c33c629ac)
 
 ## 忘记密码
-![image](https://github.com/user-attachments/assets/3056b35d-2cd8-48b7-b2c7-42213f2bdec8)
+![image](https://github.com/user-attachments/assets/cfe960a2-2dde-4d6b-806f-fb0b95d2b79a)
 
 ## 选车页面
 免登陆可见：
-![image](https://github.com/user-attachments/assets/18d41510-a6b8-497f-b34a-87a8fa70f18c)
+![image](https://github.com/user-attachments/assets/8adc04c7-7c66-45c5-a147-11cb5a065431)
 登录后：
-![image](https://github.com/user-attachments/assets/e5ec1042-9c09-4d34-b25b-bd43294147e8)
-![image](https://github.com/user-attachments/assets/826d72ed-88cd-4db4-8096-655d30f881ec)
-![image](https://github.com/user-attachments/assets/f31f9eaf-e45a-41d9-afb0-73d0ae644760)
-![image](https://github.com/user-attachments/assets/a5ffdf92-0167-4bfa-9e04-89aac759d50b)
+![image](https://github.com/user-attachments/assets/dfbed8e5-b531-4324-91ae-0481b9986993)
+![image](https://github.com/user-attachments/assets/daa1c5e4-7a44-46f7-bf45-f06f877c39ca)
+![image](https://github.com/user-attachments/assets/05f37c89-e4c9-47c0-8e0c-c4da4af136a8)
+![image](https://github.com/user-attachments/assets/78571a5e-46e8-4697-b120-c5c0ca00c859)
 
 ## 站内支付
-![image](https://github.com/user-attachments/assets/8bc21d04-5ba0-4e8c-b0b2-3f54c7ae88ab)
+![image](https://github.com/user-attachments/assets/02e9e67e-1ab2-4dc7-82cc-cf219eed7734)
 
-## 激活码
+## 卡密购买
 后台配置发卡地址，前台进行跳转
+![image](https://github.com/user-attachments/assets/22ab51e0-695b-49dc-bca0-95a7b49f6c20)
+
 ## 卡密兑换
-![image](https://github.com/user-attachments/assets/e14e3579-b55d-44e6-b38d-a8c64bd3432f)
+![image](https://github.com/user-attachments/assets/7eaf6940-3bc9-49d5-a3ab-a34a617724d4)
 
 ## 站内公告
-比较粗糙
-![image](https://github.com/user-attachments/assets/485ef419-6379-4d4c-9da1-44a95f4b6f03)
+![image](https://github.com/user-attachments/assets/e787e219-70f8-48ac-ba91-eebc76c2f1d1)
+
 
 ## 使用说明
 后台配置使用说明文档地址（如腾讯文档地址、飞书等等），前台进行跳转。
+![image](https://github.com/user-attachments/assets/5b69a33d-6188-4329-be1d-6360d717632e)
+
 
 ## 系统通知
-![image](https://github.com/user-attachments/assets/ea199f90-1f3b-476f-8e44-a7fe23220f6c)
+![image](https://github.com/user-attachments/assets/523a1606-47d7-4d14-8042-d7bb26f0f24b)
 
 ## 暗黑模式
-![image](https://github.com/user-attachments/assets/ad1787fb-81bf-4fb3-bd45-81cfc247097a)
-![image](https://github.com/user-attachments/assets/f7104848-e645-4792-ba29-048eec010caf)
+![image](https://github.com/user-attachments/assets/3505e582-2be9-4e63-be82-d6f4c641143c)
 
 ## 多语言
 目前只做了部分英汉，待完善
-![image](https://github.com/user-attachments/assets/a79c7669-6c2a-4bcc-a9b7-a16e9496060b)
+![image](https://github.com/user-attachments/assets/6f6eca28-3761-4ab8-bbfd-95714cb1924b)
 
 ## 个人中心
-![image](https://github.com/user-attachments/assets/6ee6a676-be28-4382-8e99-08fff57190cc)
+![image](https://github.com/user-attachments/assets/da0907f7-3e4c-45fe-bf43-985ae247b755)
 
 ### 会员信息展示
-续费跳转、邀请链接复制
-![image](https://github.com/user-attachments/assets/843b97a4-768f-4343-ab86-9cea9820f1aa)
+续费跳转、邀请链接复制，修改密码，邀请详情
+![image](https://github.com/user-attachments/assets/76194c2e-98a9-4831-b242-4bdfc8ac7ece)
 
-### 修改密码
-![image](https://github.com/user-attachments/assets/c3d0f0cc-8f38-4c71-a9fb-b777517887e8)
-
-### 邀请详情
-![image](https://github.com/user-attachments/assets/8329af51-9d54-402e-b21c-5fadfcd4e61f)
 
 ## 退出登录
-![image](https://github.com/user-attachments/assets/690eb933-62cc-4f60-91eb-5037b380a20b)
+![image](https://github.com/user-attachments/assets/a7c8af65-f983-46af-b066-ef5f679fae12)
 
 
 # 管理后台展示
 
 ## 管理后台入口
 只有admin管理员账号才显示此入口
-![image](https://github.com/user-attachments/assets/5072b433-e84f-4c58-bd84-051ebce3e6f4)
+![image](https://github.com/user-attachments/assets/96d8781c-3192-4bf6-bc47-60c50c293e79)
 
 ## 数据统计（粗糙）
-![image](https://github.com/user-attachments/assets/6bfedc99-f193-4940-9bbf-063d9ebae2e5)
-
-
-## gpt 账号管理
-![image](https://github.com/user-attachments/assets/be3ef772-ead5-4ec8-b27c-f41d24d917f0)
-
-
-## claude 账号管理
-![image](https://github.com/user-attachments/assets/85f8010c-2290-48f0-a045-6f3ae340f72f)
+![image](https://github.com/user-attachments/assets/eb810f82-3875-4b45-ae8d-45e636bf2d33)
 
 
 ## 用户管理
-![image](https://github.com/user-attachments/assets/57961bab-087a-4270-b513-5f34a52b8a72)
+![image](https://github.com/user-attachments/assets/0a8014ee-69f3-4a6e-ae0e-4c50d8c1c9fd)
 
 
-## 公告管理
-![image](https://github.com/user-attachments/assets/c005f369-ba34-4832-9b4b-99efcf80a5c2)
+## 账号管理
+包含gpt和claude账号管理
+![image](https://github.com/user-attachments/assets/669edf84-a2e7-4541-9f7b-9510ca6b4264)
+![image](https://github.com/user-attachments/assets/594a295f-9942-41e6-8e6d-735bdf6fe710)
 
 
 ## 订阅管理
-![image](https://github.com/user-attachments/assets/ea8bde82-72c6-4ea2-bc0b-9de39a411148)
+![image](https://github.com/user-attachments/assets/ca5fe696-b2c2-40dd-bb65-c9f671556d4b)
+
+
+## 营销管理
+包含公告通知、优惠卷、激活码
+![image](https://github.com/user-attachments/assets/527dcf59-5e61-4c83-a88f-7aa32290b9be)
+
+![image](https://github.com/user-attachments/assets/e2b8563d-9e22-4adc-b928-88d58005ab21)
+
+![image](https://github.com/user-attachments/assets/c836b58b-dbb0-4d75-b49b-a68a1158f4b5)
+
+![image](https://github.com/user-attachments/assets/49cca475-2250-430b-a776-d468c093615e)
 
 
 ## 订单管理
-![image](https://github.com/user-attachments/assets/d43030d6-3f54-4109-9999-1fd7ac016b03)
+包含支付设置、订单信息
+![image](https://github.com/user-attachments/assets/548957f8-7f77-45f1-ad7c-495c25bc2d94)
+
+![image](https://github.com/user-attachments/assets/a77778b3-dbfe-4279-860b-eef866f101c6)
+
+![image](https://github.com/user-attachments/assets/c7516b50-4b7c-490f-b6ae-5eb564ed46e5)
 
 
-## 支付管理
-![image](https://github.com/user-attachments/assets/3e55002c-f52f-489d-b0f1-705c3aa23b50)
-
-
-## 优惠卷管理
-![image](https://github.com/user-attachments/assets/ede44377-244e-4b2c-ad10-252ae885c7d6)
-
-
-## 卡密管理
-![image](https://github.com/user-attachments/assets/b602398e-e34f-40bf-9ec7-92a51a2e5428)
+## 对话管理
+![image](https://github.com/user-attachments/assets/04fd4cf0-4c89-4420-bfb8-3301f8206f87)
 
 
 ## 系统配置
 
-![image](https://github.com/user-attachments/assets/2ec71264-5cde-4291-8537-eaca7683bf88)
+包含系统设置、会员管理、邮箱配置、前台配置、节点设置
 
+![image](https://github.com/user-attachments/assets/ce286501-cba3-4f33-83fc-767209d6920b)
 
-### 会员设置
-![image](https://github.com/user-attachments/assets/d3c7a1ed-f672-4b94-a975-f1d53a7e3f37)
+![image](https://github.com/user-attachments/assets/58ba5d9d-59e0-4842-b018-a52ea5efd6bd)
 
+![image](https://github.com/user-attachments/assets/d270024c-37e4-4b6b-a752-c3eeb4d74a92)
 
-### 邮箱设置
-![image](https://github.com/user-attachments/assets/faa0cb35-b411-40a2-b97b-7b7446082c74)
+![image](https://github.com/user-attachments/assets/ae9fc766-1f8e-42d8-b5b4-60b002660ef1)
 
-
-### 其他配置
-![image](https://github.com/user-attachments/assets/1872724c-d033-4148-ba12-4db8e2e8056c)
-
+![image](https://github.com/user-attachments/assets/ea10ef3a-538e-4de3-9d71-2ef9ba29bcf9)
 
 # 选车页面手机端显示
-![image](https://github.com/user-attachments/assets/d058d20d-df73-41a0-b649-ab8015387a00)
-![image](https://github.com/user-attachments/assets/571de06a-9007-4b17-9485-77b36c5f2cf7)
-![image](https://github.com/user-attachments/assets/6a7774cd-6df2-401b-a142-de51a30c4ea1)
-![image](https://github.com/user-attachments/assets/cb0d7ee3-5032-4de2-ab57-f20217bc89f6)
-![image](https://github.com/user-attachments/assets/5b2dcd8a-6a88-4dcd-a005-888129b9810e)
+![image](https://github.com/user-attachments/assets/8e548a15-5ea6-4092-87da-31ca4d42d3a5)
+![image](https://github.com/user-attachments/assets/eb98622b-2053-40fc-a1eb-a4ffbf5d2a12)
+![image](https://github.com/user-attachments/assets/1cac2a9c-2340-4b82-b649-89be8816d013)
+![image](https://github.com/user-attachments/assets/88420edb-93e7-487f-a489-3d4035c40d0b)
+![image](https://github.com/user-attachments/assets/c4e1cb36-8b04-4ecb-92d6-a8c47e739060)
+
 
 # 如果访问受限，请联系我ip过白。
-![image](https://github.com/user-attachments/assets/ef396127-ceac-436a-a76c-51b33e938a78)
-
-![01fdf29f9db4e530174832ea6d9d77b](https://github.com/user-attachments/assets/620b8cce-f84f-42f9-a650-ada01229b1bd)
+![image](https://github.com/user-attachments/assets/857b0a80-af26-4b59-8951-2c45b30b7866)
 
 
 # 如果搞不定，提供有偿部署服务
@@ -257,7 +251,7 @@ reverse_proxy localhost:8300
 
 先用一键脚本部署程序，**建议不要放在和原来share程序一个地方**！！！
 ```
-curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/deploy/quick-install.sh | bash
+curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expander/quick-install.sh | bash
 ```
 
 ## 迁移旧系统的数据
@@ -288,7 +282,7 @@ docker compose exec -T mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" c
 
 ### 更新用户权益
 
-![image](https://github.com/user-attachments/assets/c8707258-55c9-42e1-ae90-707ee27b64ee)
+![image](https://github.com/user-attachments/assets/3437cc40-44e4-4a34-ac4c-63227616e152)
 
 执行后，会同步原有用户的plus权益，迁移后只需要执行一次即可。
 
