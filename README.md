@@ -51,12 +51,7 @@ curl -sSfL https://raw.githubusercontent.com/seven2202/chatgpt-share-server-expa
 
 ![image](https://github.com/user-attachments/assets/870082a7-a0e9-499f-b501-4641a9864424)
 
-
-## 点击配置文件开始进行nginx配置
-![image](https://github.com/user-attachments/assets/4ef56575-57e8-4bb7-87e2-864f22158664)
-
-
-![image](https://github.com/user-attachments/assets/2007ba58-e028-4d76-afa9-e3ec7a3f5f98)
+根据你的代理新增反代信息
 
 # nginx和caddy选择其中一种即可
 
