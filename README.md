@@ -85,7 +85,7 @@ location /api/ {
 ```
 xxx.com {
 
-   handle_path /list {
+   handle_path /list/* {
         rewrite * /app/index.html
         reverse_proxy localhost:8400
         }
