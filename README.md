@@ -137,9 +137,7 @@ reverse_proxy localhost:8300
 
 ## 站内支付
 
-近期在重构，更美观高大。
-
-![image](https://github.com/user-attachments/assets/02e9e67e-1ab2-4dc7-82cc-cf219eed7734)
+![36eb82433bc8030bd5d9253f37eddd9](https://github.com/user-attachments/assets/93a589f5-b78e-4763-b7fd-f02b1517c780)
 
 ## 卡密购买
 
