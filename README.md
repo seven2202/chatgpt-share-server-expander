@@ -139,6 +139,10 @@ reverse_proxy localhost:8300
 
 ![36eb82433bc8030bd5d9253f37eddd9](https://github.com/user-attachments/assets/93a589f5-b78e-4763-b7fd-f02b1517c780)
 
+![image](https://github.com/user-attachments/assets/65ab0756-86de-4b24-a1ea-b6b9b9867d19)
+
+
+
 ## 卡密购买
 
 后台配置发卡地址，前台进行跳转
