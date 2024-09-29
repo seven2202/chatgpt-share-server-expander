@@ -35,6 +35,7 @@ services:
       # 内容审核及速率限制
       AUDIT_LIMIT_URL: "http://chatgpt-share-server-expander:8888/auditLimit"
       OAUTH_URL: https://xxx.xxx.xxx/api/user/oauth # 请把xxx的地方更换为自己的域名
+      APIAUTH: expander  # 该值为演示，请填写复杂度高的值，字母数字大小写均可
     volumes:
       - ./config.yaml:/app/config.yaml
       - ./data/chatgpt-share-server/:/app/data/
@@ -71,6 +72,6 @@ services:
       O1_PREVIEW_PER: 1w # o1-preview模型限制周期 请填写1s,1m,1h,1d,1w,1M,1y的形式
       O1_MINI_LIMIT: 50 #o1-mini模型限制次数
       O1_MINI_PER: 1d # o1-mini模型限制周期 请填写1s,1m,1h,1d,1w,1M,1y的形式
-
+      APIAUTH: expander  # 该值为演示，请填写复杂度高的值，字母数字大小写均可，与上面的APIAUTH值要一致
     volumes:
       - ./data/chatgpt-share-server-expander/data/:/app/data/
