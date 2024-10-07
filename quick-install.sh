@@ -16,11 +16,17 @@ read CHATPROXY < /dev/tty
 echo -n "请输入网站域名地址 (如：https://b.baidu.com)："
 read OAUTH_URL < /dev/tty
 
+
 # 替换 docker-compose.yml 文件中的 CHATPROXY 和 OAUTH_URL
 sed -i "s|CHATPROXY: .*|CHATPROXY: \"$CHATPROXY\"|g" docker-compose.yml
 
 # 替换 OAUTH_URL 中的域名部分，保持 /api/user/oauth 路径不变
 sed -i "s|OAUTH_URL: https://[^/]*/api/user/oauth|OAUTH_URL: \"$OAUTH_URL/api/user/oauth\"|g" docker-compose.yml
+
+# 生成一个 UUID 并写入到配置文件中
+UUID=$(uuidgen)
+sed -i "s|APIAUTH: .*|APIAUTH: \"$UUID\"|g" docker-compose.yml
+
 
 # 提示用户确认是否继续执行
 echo -n "配置信息已更新，是否继续拉取并启动 Docker 服务？(y/n)："
