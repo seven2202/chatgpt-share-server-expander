@@ -1,8 +1,5 @@
 # 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
-# chatgpt-share-server-expander(付费版)
-#### 同时支持ChatGPT和claude，拥有较为完整的用户管理体系。
-#### 支持暗黑模式和多语言，用户使用速率单独控制。支持站内（易支付、当面付、虎皮椒）和站外支付等。
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
