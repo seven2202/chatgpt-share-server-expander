@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+## 自定义随机字符串生成函数，包含大小写字母和数字
+generate_random_string() {
+    length=$1
+    random_string=$(cat /dev/urandom | tr -dc 'A-Za-z0-9' | head -c $length)
+    echo $random_string
+}
+
 ## 克隆仓库到本地
 echo "开始拉取代码..."
 git clone -b deploy --depth=1 https://github.com/seven2202/chatgpt-share-server-expander.git chatgpt-share-expander
@@ -21,6 +28,10 @@ sed -i "s|CHATPROXY: .*|CHATPROXY: \"$CHATPROXY\"|g" docker-compose.yml
 
 # 替换 OAUTH_URL 中的域名部分，保持 /api/user/oauth 路径不变
 sed -i "s|OAUTH_URL: https://[^/]*/api/user/oauth|OAUTH_URL: \"$OAUTH_URL/api/user/oauth\"|g" docker-compose.yml
+
+# 生成一个包含大小写字母和数字的随机字符串并写入到配置文件中
+UUID=$(generate_random_string 32)
+sed -i "s|APIAUTH: .*|APIAUTH: \"$UUID\"|g" docker-compose.yml
 
 # 提示用户确认是否继续执行
 echo -n "配置信息已更新，是否继续拉取并启动 Docker 服务？(y/n)："
