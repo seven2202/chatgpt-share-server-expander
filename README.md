@@ -284,7 +284,8 @@ reverse_proxy localhost:8300
 
 # 如果访问受限，请联系我ip过白。
 
-![cdcfa58e007e87c8fff8e6c074c950d](https://github.com/user-attachments/assets/9d39d3f9-a3b0-4e5b-85d5-d932a5b87a8c)
+![image](https://github.com/user-attachments/assets/d8e6c7c9-0b32-49fb-9100-14956dd15995)
+
 
 
 
