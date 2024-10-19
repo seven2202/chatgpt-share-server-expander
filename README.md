@@ -1,10 +1,13 @@
 # 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
+# chatgpt-share-server-expander(付费版)
+#### 同时支持ChatGPT和claude。
+#### 仅需要50元/月，无任何其他费用。
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持免费、4o、plus、claude节点划分
-- 支持站内支付（虎皮椒、易支付、当面付）、卡密购买、兑换。
+- 支持站内支付（虎皮椒、易支付、当面付、蓝兔）、卡密购买、兑换。
 - 支持系统通知、站内公告、使用说明设置
 - 支持暗黑模式和多语言
 - 支持客服脚本
@@ -15,10 +18,12 @@
 - 支持claude session管理功能
 - 支持订阅管理
 - 支持订单管理
-- 支持卡密管理
-- 支持虚拟车队
+- 支持卡密管理（生成、批量导出）
+- 支持虚拟车队 （plus虚拟车）
 - 支持优惠卷管理功能
-- 更多功能
+- 支持用户引导功能
+- 会员到期邮件提醒
+- 支持推广返现
 
 # 更新日志及开发计划
 
@@ -80,7 +85,7 @@ location /api/ {
 ```
 xxx.com {
 
-   handle_path /list {
+   handle_path /list/* {
         rewrite * /app/index.html
         reverse_proxy localhost:8400
         }
@@ -132,7 +137,10 @@ reverse_proxy localhost:8300
 
 ## 站内支付
 
-![image](https://github.com/user-attachments/assets/e663acb4-f641-4f69-8b00-ff9a07f3c001)
+![36eb82433bc8030bd5d9253f37eddd9](https://github.com/user-attachments/assets/93a589f5-b78e-4763-b7fd-f02b1517c780)
+
+![image](https://github.com/user-attachments/assets/65ab0756-86de-4b24-a1ea-b6b9b9867d19)
+
 
 
 ## 卡密购买
@@ -277,7 +285,10 @@ reverse_proxy localhost:8300
 
 # 如果访问受限，请联系我ip过白。
 
-![image](https://github.com/user-attachments/assets/857b0a80-af26-4b59-8951-2c45b30b7866)
+![1729349586790](https://github.com/user-attachments/assets/a543a7d0-2fe3-47a0-87ca-def24825c930)
+
+
+
 
 
 # 如果搞不定，提供有偿部署服务
