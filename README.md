@@ -2,7 +2,7 @@
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude。
-#### 仅需要60元/月，无任何其他费用。
+#### 基础版仅需要60元/月，无任何其他费用，高级版：还未定价。
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
@@ -28,7 +28,7 @@
 - 支持备用站功能
 
 # 更新日志及开发计划
-
+高级版，增强了备用站功能，将采用官方的登录ui、实现免登陆对话，对话页面内嵌各种营销内容。
 https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 
