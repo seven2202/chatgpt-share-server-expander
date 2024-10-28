@@ -289,7 +289,12 @@ reverse_proxy localhost:8300
 
 # 如果访问受限，请联系我ip过白。
 
-![1729349586790](https://github.com/user-attachments/assets/a543a7d0-2fe3-47a0-87ca-def24825c930)
+![Uploading image.png…]()
+
+# expander 交流群
+
+![image](https://github.com/user-attachments/assets/1ddd4190-6f3f-4d51-ac97-08eb72afe027)
+
 
 
 
