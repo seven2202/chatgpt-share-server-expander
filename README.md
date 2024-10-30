@@ -2,7 +2,7 @@
 #### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude。
-#### 仅需要60元/月，无任何其他费用。
+#### 仅需要60元/月，无任何其他费用。最新功能界面以演示站为准。
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
@@ -287,7 +287,8 @@ reverse_proxy localhost:8300
 
 # 如果访问受限，请联系我ip过白。
 
-![1729349586790](https://github.com/user-attachments/assets/a543a7d0-2fe3-47a0-87ca-def24825c930)
+![1730296653415](https://github.com/user-attachments/assets/754d2271-b734-4393-a250-5459d1a0c61d)
+
 
 
 
