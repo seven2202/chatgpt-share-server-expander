@@ -5,7 +5,7 @@
 本项目集成了以下服务：
 
 - **[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 xyhelper 大佬。
-- **[fuclaude](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 wozulong 大佬。
+- **[fuclaude](https://github.com/wozulong/fuclaude)**，感谢 wozulong 大佬。
 
 ### 许可证
 
