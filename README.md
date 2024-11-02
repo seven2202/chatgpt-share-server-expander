@@ -1,13 +1,47 @@
-# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
-#### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
+# 基于 chatgpt-share-server 开发的外挂程序，支持 xyhelper 网关。
+
+## 项目声明
+
+本项目集成了以下服务：
+
+- **[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 xyhelper 大佬。
+- **[fuclaude](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 wozulong 大佬。
+
+### 许可证
+
+本项目遵循 MIT 许可证。以下是原项目的许可证信息：
+```mit
+Copyright (c) 2024 我秦始皇
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+如有任何侵权行为，麻烦联系我指正修改。微信：Seven_Linked。
+
+
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude。
-#### 仅需要60元/月，无任何其他费用。最新功能界面以演示站为准。
-
+#### 基础版仅需要60元/月，无任何其他费用，最新功能界面以演示站为准。
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持免费、4o、plus、claude节点划分
-- 支持站内支付（虎皮椒、易支付、当面付、蓝兔）、卡密购买、兑换。
+- 支持站内支付（虎皮椒、易支付、当面付、蓝兔、微信native）、卡密购买、兑换。
 - 支持系统通知、站内公告、使用说明设置
 - 支持暗黑模式和多语言
 - 支持客服脚本
@@ -24,9 +58,11 @@
 - 支持用户引导功能
 - 会员到期邮件提醒
 - 支持推广返现
+- 登录直接进入对话页面
+- 支持备用站功能
 
 # 更新日志及开发计划
-
+高级版，增强了备用站功能，将采用官方的登录ui、实现免登陆对话，对话页面内嵌各种营销内容。
 https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 
@@ -287,7 +323,13 @@ reverse_proxy localhost:8300
 
 # 如果访问受限，请联系我ip过白。
 
-![1730296653415](https://github.com/user-attachments/assets/754d2271-b734-4393-a250-5459d1a0c61d)
+![1730078998194](https://github.com/user-attachments/assets/d2992892-f19a-4389-ab82-24cf0bcccdd3)
+
+
+# expander 交流群
+
+![1730296653415](https://github.com/user-attachments/assets/e037d70c-41e5-4901-a654-d3cc2dd38cb1)
+
 
 
 
