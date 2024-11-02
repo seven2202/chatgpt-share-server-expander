@@ -1,4 +1,4 @@
-# 基于 chatgpt-share-server 开发的外挂程序，支持 xyhelper 网关。
+# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
 
 ## 项目声明
 
