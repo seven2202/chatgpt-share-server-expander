@@ -1,5 +1,40 @@
-# 基于chatgpt-share-server开发的外挂程序，支持xyhelper网关。
-#### 项目地址：[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy) 感谢xyhelper大佬的辛勤付出，敬礼！！！
+# 基于 chatgpt-share-server 开发的外挂程序，支持 xyhelper 网关。
+
+## 项目声明
+
+本项目集成了以下服务：
+
+- **[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 xyhelper 大佬。
+- **[fuclaude](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 wozulong 大佬。
+
+### 许可证
+
+本项目遵循 MIT 许可证。以下是原项目的许可证信息：
+```mit
+Copyright (c) 2024 我秦始皇
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+如有任何侵权行为，麻烦联系我指正修改。微信：Seven_Linked。
+
+
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude。
 #### 基础版仅需要60元/月，无任何其他费用，最新功能界面以演示站为准。
