@@ -37,7 +37,6 @@ modules:
         enable: 1
       log:
         enable: 1
-
 PROHIBIT_MULTIPLE_LOGIN: true # 禁止多设备登录
 RECORD_CONVERSATION: true # 开启对话记录
 ALLOW_CHANGE_CAR_ON_429: true # 在 429 时会提示会话换车
