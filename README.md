@@ -10,6 +10,19 @@
 # chatgpt-share-server-expander(付费版)
 #### 同时支持ChatGPT和claude。
 #### 基础版仅需要60元/月，无任何其他费用，最新功能界面以演示站为准。
+#### 高级版已上线，99一个月。按需购买，主要降低用户使用成本和提高付费率考虑设计的。
+
+# 高级版内容
+- 多了一套登录ui，自由切换，使用官网的登录、注册、找回密码ui
+![image](https://github.com/user-attachments/assets/29fd9252-20b8-49ca-99ff-bdbd364ef756)
+![image](https://github.com/user-attachments/assets/93a2bc1f-212f-4625-b272-d97d478e84a3)
+![image](https://github.com/user-attachments/assets/ab1583ae-6197-47ba-8831-793104de62f9)
+- 游客模式：登录就能用，可以选择让游客用普号还是plus，也可以设置游客的对话速率
+![image](https://github.com/user-attachments/assets/c2037608-7927-4c0e-a5ee-2758642a53e5)
+- 登录以后，显示个人中心，速率信息，自动选车、使用说明、导出对话、备用站点、使用claude、站内购买，公告等等...
+![image](https://github.com/user-attachments/assets/430545d6-b43d-4cfe-8e49-88b65eac8d41)
+- 
+
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持免费、4o、plus、claude节点划分
