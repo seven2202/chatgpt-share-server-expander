@@ -313,10 +313,7 @@ reverse_proxy localhost:8300
 
 # expander 交流群
 
-![1730296653415](https://github.com/user-attachments/assets/e037d70c-41e5-4901-a654-d3cc2dd38cb1)
-
-
-
+![image](https://github.com/user-attachments/assets/7dab9f2f-59b9-4de0-9a0f-971d21e8319e)
 
 
 
