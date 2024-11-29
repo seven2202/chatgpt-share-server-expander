@@ -11,7 +11,7 @@
 #### 同时支持ChatGPT和claude。
 #### 99一个月。按需购买，主要降低用户使用成本和提高付费率考虑设计的。
 
-# 高级版内容
+# 用户直观的内容
 - 多了一套登录ui，自由切换，使用官网的登录、注册、找回密码ui
 ![image](https://github.com/user-attachments/assets/29fd9252-20b8-49ca-99ff-bdbd364ef756)
 ![image](https://github.com/user-attachments/assets/93a2bc1f-212f-4625-b272-d97d478e84a3)
