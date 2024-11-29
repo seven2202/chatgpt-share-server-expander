@@ -52,7 +52,7 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.scope=xyhelper-chatgpt-share-server"
   chatgpt-share-server-expander:
-    image: seven222/chatgpt-share-server-expander
+    image: seven222/chatgpt-share-server-expander-plus
     restart: always
     ports:
       - "8400:8888"
