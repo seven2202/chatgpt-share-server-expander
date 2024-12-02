@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/cbc9e56f-0055-4a80-9d50-af1384206033)# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
+# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
 
 ## 项目声明
 
