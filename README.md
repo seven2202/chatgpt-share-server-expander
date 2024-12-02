@@ -26,7 +26,7 @@
 
 - 选车页面
 ![image](https://github.com/user-attachments/assets/c30afdf2-78e6-43bf-9d54-44267204be9f)
-- 暗黑模式
+- 明亮和暗黑模式
 ![image](https://github.com/user-attachments/assets/ad59cd00-a314-4d3e-9054-09a11e1b5b85)
 - 多语言
 ![image](https://github.com/user-attachments/assets/7c6623f1-370a-4607-957f-452dbbf65879)
