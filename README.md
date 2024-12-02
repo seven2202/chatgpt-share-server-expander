@@ -8,10 +8,8 @@
 - **[fuclaude](https://github.com/wozulong/fuclaude)**，感谢 wozulong 大佬。
 
 # chatgpt-share-server-expander(付费版)
-#### 同时支持ChatGPT和claude。
-#### 99一个月。不限制用户数量，新增需求不额外收费。
-
-### 演示站：https://940309.xyz
+### 同时支持ChatGPT和claude。
+### 99一个月。不限制用户数量，新增需求不额外收费。演示站：https://940309.xyz
 
 # 产品亮点
 
