@@ -1,6 +1,6 @@
 # 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
 
-## 项目声明
+## 项目声明(排名不分先后)
 
 本项目集成了以下服务：
 
