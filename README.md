@@ -1,4 +1,4 @@
-# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
+![image](https://github.com/user-attachments/assets/cbc9e56f-0055-4a80-9d50-af1384206033)# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
 
 ## 项目声明
 
@@ -11,21 +11,40 @@
 #### 同时支持ChatGPT和claude。
 #### 99一个月。按需购买，主要降低用户使用成本和提高付费率考虑设计的。
 
-# 用户直观的内容
-- 多了一套登录ui，自由切换，使用官网的登录、注册、找回密码ui
+# 产品亮点
+
+- 官网登录注册ui
 ![image](https://github.com/user-attachments/assets/29fd9252-20b8-49ca-99ff-bdbd364ef756)
 ![image](https://github.com/user-attachments/assets/93a2bc1f-212f-4625-b272-d97d478e84a3)
 ![image](https://github.com/user-attachments/assets/ab1583ae-6197-47ba-8831-793104de62f9)
+
 - 游客模式：登录就能用，可以选择让游客用普号还是plus，也可以设置游客的对话速率
 ![image](https://github.com/user-attachments/assets/c2037608-7927-4c0e-a5ee-2758642a53e5)
+
 - 登录以后，显示个人中心，速率信息，自动选车、使用说明、导出对话、备用站点、使用claude、站内购买，公告等等...
 ![image](https://github.com/user-attachments/assets/430545d6-b43d-4cfe-8e49-88b65eac8d41)
-- 
+
+- 选车页面
+![image](https://github.com/user-attachments/assets/c30afdf2-78e6-43bf-9d54-44267204be9f)
+- 暗黑模式
+![image](https://github.com/user-attachments/assets/ad59cd00-a314-4d3e-9054-09a11e1b5b85)
+- 多语言
+![image](https://github.com/user-attachments/assets/7c6623f1-370a-4607-957f-452dbbf65879)
+- 在线商店
+![image](https://github.com/user-attachments/assets/de739768-9183-4b50-a45e-06c8cb328d12)
+
+- 卡密兑换
+![image](https://github.com/user-attachments/assets/4ed76a50-7c73-4078-a335-cdfc499b10ea)
+
+- 推广返现 
+![image](https://github.com/user-attachments/assets/ef62a62a-2c44-42f1-9025-45041f67604f)
+
+- 等等 
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持免费、4o、plus、claude节点划分
-- 支持站内支付（虎皮椒、易支付、当面付、蓝兔、微信native）、卡密购买、兑换。
+- 支持站内支付（虎皮椒、易支付、当面付、蓝兔、微信native、usdt）、卡密购买、兑换。
 - 支持系统通知、站内公告、使用说明设置
 - 支持暗黑模式和多语言
 - 支持客服脚本
@@ -37,16 +56,20 @@
 - 支持订阅管理
 - 支持订单管理
 - 支持卡密管理（生成、批量导出）
-- 支持虚拟车队 （plus虚拟车）
+- 支持gpt虚拟车队 （plus虚拟车）
+- 支持claude虚拟车队
 - 支持优惠卷管理功能
 - 支持用户引导功能
 - 会员到期邮件提醒
 - 支持推广返现
 - 登录直接进入对话页面
-- 支持备用站功能
+- 支持备用api站功能
+- 用户独立速率限制
+- 用户对话隔离
+- 自动换号功能
+- 免登模式（无需登录就能对话）
 
 # 更新日志及开发计划
-高级版，增强了备用站功能，将采用官方的登录ui、实现免登陆对话，对话页面内嵌各种营销内容。
 https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 
@@ -312,12 +335,13 @@ reverse_proxy localhost:8300
 
 # expander 交流群
 
-![image](https://github.com/user-attachments/assets/7dab9f2f-59b9-4de0-9a0f-971d21e8319e)
+![image](https://github.com/user-attachments/assets/5aea5554-300a-4327-9c43-49c3bee3abcc)
 
 
 
 
-# 如果搞不定，提供有偿部署服务
+
+# 如果搞不定，提供有偿部署服务，200一次
 
 # 部分迁移用户适用(原版share不需要操作)
 
