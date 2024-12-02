@@ -11,7 +11,11 @@
 #### 同时支持ChatGPT和claude。
 #### 99一个月。不限制用户数量，新增需求不额外收费。
 
+### 演示站：https://940309.xyz
+
 # 产品亮点
+
+## 文档不经常更新，请以演示站为准。
 
 - 官网登录注册ui
 ![image](https://github.com/user-attachments/assets/29fd9252-20b8-49ca-99ff-bdbd364ef756)
