@@ -71,6 +71,8 @@ services:
       O1_PREVIEW_PER: 1w # o1-preview模型限制周期 请填写1s,1m,1h,1d,1w,1M,1y的形式
       O1_MINI_LIMIT: 50 #o1-mini模型限制次数，填写0则不限制
       O1_MINI_PER: 1d # o1-mini模型限制周期 请填写1s,1m,1h,1d,1w,1M,1y的形式
+      O1_PRO_LIMIT: 20 #o1-pro模型限制次数
+      O1_PRO_PER: 1d # o1-pro模型限制周期 请填写1s（秒）,1m（分钟）,1h（小时）,1d（一天）,1w（一周）,1M（一个月）,1y（一年）的形式
       APIAUTH: expander  # 该值为演示，请填写复杂度高的值，字母数字大小写均可，与上面的APIAUTH值要一致
     volumes:
       - ./data/chatgpt-share-server-expander/data/:/app/data/
