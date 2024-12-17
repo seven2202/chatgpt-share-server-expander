@@ -1,4 +1,4 @@
-# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
+![image](https://github.com/user-attachments/assets/4f724291-ed60-4e76-b82f-bb5aaffef7b7)# 集成 chatgpt-share-server 和 fucluade 开发的外挂程序
 
 ## 项目声明(排名不分先后)
 
@@ -65,10 +65,19 @@ https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 ![image](https://github.com/user-attachments/assets/de739768-9183-4b50-a45e-06c8cb328d12)
 
 - 卡密兑换
-![image](https://github.com/user-attachments/assets/4ed76a50-7c73-4078-a335-cdfc499b10ea)
+![image](https://github.com/user-attachments/assets/0141d772-90b7-4fca-afc2-9d1fb30131a4)
+
 
 - 推广返现 
 ![image](https://github.com/user-attachments/assets/ef62a62a-2c44-42f1-9025-45041f67604f)
+
+- 个人中心
+  ![image](https://github.com/user-attachments/assets/2ace63aa-8f76-4d78-bcd2-9291945c53de)
+  ![image](https://github.com/user-attachments/assets/753530df-59ec-4983-afcb-56edfc7c9d90)
+  ![image](https://github.com/user-attachments/assets/46b10ada-4d57-4537-8e0c-c6e6af1ef1b5)
+
+
+
 
 - 等等 
 
