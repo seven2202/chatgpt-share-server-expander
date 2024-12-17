@@ -11,7 +11,36 @@
 ### 同时支持ChatGPT和claude。
 ### 99一个月。不限制用户数量，新增需求不额外收费。演示站：https://940309.xyz
 
-# 产品亮点
+# 功能优势
+- 支持邮箱注册、登录、找回密码
+- 支持多种节点划分：免费、4o、plus、claude节点、api节点
+- 支持多种站内支付（虎皮椒、易支付、当面付、蓝兔、微信native、usdt）
+- 支持系统通知、站内公告、使用说明设置，每次更新会在用户对话页面、选车页面实时弹出。
+- 支持暗黑模式和多语言
+- 支持自定义脚本
+- 支持免登进入选车页面，登录直接进入对话页面
+- 支持邀请功能、邀请返现
+- 支持用户数据统计（包括在线人数、每日模型使用次数、新增用户、已付费人数、未付费人数、收入统计等）
+- 支持在线商店、卡密两种营销模式。支持ChatGPT套餐、claude套餐、ChatGPT&claude组合套餐模式
+- 支持订单管理功能
+- 支持gpt虚拟车队 （plus、team、pro虚拟车）
+- 支持claude pro虚拟车队
+- 支持优惠卷管理功能（优惠折扣、优惠金额、使用次数限制）
+- 邮件通知服务（支付成功通知管理员）
+- 用户独立速率限制
+- 用户对话隔离
+- 自动换号功能
+- 免登模式（无需登录就能对话）
+- 支持自定义侧边栏
+- Claude次数限制、统计、状态监控
+- 用户时长补偿功能
+- 支持用户批量创建，用户登录后套餐才生效。
+- 自定义模型倍率
+- 对话页面会员到期3天提醒
+- 更多功能以测试站为准
+
+# 更新日志及开发计划
+https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 ## 文档不经常更新，请以演示站为准。
 
@@ -43,36 +72,102 @@
 
 - 等等 
 
-# 功能优势
-- 支持邮箱注册、登录、找回密码
-- 支持免费、4o、plus、claude节点划分
-- 支持站内支付（虎皮椒、易支付、当面付、蓝兔、微信native、usdt）、卡密购买、兑换。
-- 支持系统通知、站内公告、使用说明设置
-- 支持暗黑模式和多语言
-- 支持客服脚本
-- 支持免登进入选车页面
-- 支持邀请功能（复制邀请码、查看邀请人信息）
-- 支持用户数据统计
-- 支持批量获取gpt session功能
-- 支持claude session管理功能
-- 支持订阅管理
-- 支持订单管理
-- 支持卡密管理（生成、批量导出）
-- 支持gpt虚拟车队 （plus虚拟车）
-- 支持claude虚拟车队
-- 支持优惠卷管理功能
-- 支持用户引导功能
-- 会员到期邮件提醒
-- 支持推广返现
-- 登录直接进入对话页面
-- 支持备用api站功能
-- 用户独立速率限制
-- 用户对话隔离
-- 自动换号功能
-- 免登模式（无需登录就能对话）
 
-# 更新日志及开发计划
-https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
+# 管理后台展示
+
+## 管理后台入口
+
+只有admin管理员账号才显示此入口
+
+![image](https://github.com/user-attachments/assets/662d77b4-4867-49a5-ba33-d6369a69cf11)
+
+
+## 数据统计
+
+![image](https://github.com/user-attachments/assets/2cdbb600-0e99-483e-ace3-0a7d26a27cd7)
+
+
+
+## 用户管理
+
+![image](https://github.com/user-attachments/assets/af2d5c54-82e8-451e-94e4-6bb46609e24a)
+
+
+
+## 账号管理
+
+包含gpt和claude账号管理
+
+![image](https://github.com/user-attachments/assets/6fb29aa6-db90-4363-900e-0912a03d9d89)
+
+
+![image](https://github.com/user-attachments/assets/abc95dec-2daa-4964-b23e-4695c8d234e6)
+
+
+
+## 订阅管理
+
+![image](https://github.com/user-attachments/assets/f334bb7e-38a4-458b-87ca-0c3b4ed3bda9)
+
+
+
+## 营销管理
+
+包含公告通知、优惠卷、激活码、推广返现
+
+![image](https://github.com/user-attachments/assets/d4d61189-8bd0-4e5e-99cd-71f999a4fb17)
+
+
+![image](https://github.com/user-attachments/assets/6a23d536-d931-4799-8b65-bf96257d27b8)
+
+
+![image](https://github.com/user-attachments/assets/f4ba729c-ab6e-4e71-b544-b7fdbf9e7696)
+
+
+![image](https://github.com/user-attachments/assets/323108fe-fe50-4735-bc3d-8eb6c4c1d6ea)
+
+
+
+## 订单管理
+
+包含支付设置、订单信息
+
+![image](https://github.com/user-attachments/assets/4f927e32-7349-493b-bd9c-c02ca6e56f39)
+
+
+![image](https://github.com/user-attachments/assets/5c6933de-e307-405f-a343-7fed6f74d100)
+
+
+
+## 对话管理
+
+![image](https://github.com/user-attachments/assets/04fd4cf0-4c89-4420-bfb8-3301f8206f87)
+
+## 敏感词设置
+
+![image](https://github.com/user-attachments/assets/ea310f26-62a9-420f-99cc-38e5dfbd2487)
+
+
+
+## 系统配置
+
+包含系统设置、会员管理、邮箱配置、前台配置、节点设置、返现设置
+
+![image](https://github.com/user-attachments/assets/a49bf24e-95e9-4089-ab6c-3b98abe28175)
+
+
+![image](https://github.com/user-attachments/assets/4c37e4a3-a436-4993-bab0-db595396e8ff)
+
+
+![image](https://github.com/user-attachments/assets/d2793394-2689-4653-a8e6-866543c2e773)
+
+![image](https://github.com/user-attachments/assets/61a7e459-9ee6-4c74-a7ba-53e77e426ca3)
+
+![image](https://github.com/user-attachments/assets/691d263e-9f1d-460e-8ee3-e19deddad0c1)
+
+![image](https://github.com/user-attachments/assets/305c57b4-6a40-4ce3-9c45-49e433cd6c88)
+
+
 
 
 # 快速部署
@@ -152,95 +247,6 @@ reverse_proxy localhost:8300
 
 配置完成后，直接访问你的域名即可
 
-
-# 管理后台展示
-
-## 管理后台入口
-
-只有admin管理员账号才显示此入口
-
-![image](https://github.com/user-attachments/assets/96d8781c-3192-4bf6-bc47-60c50c293e79)
-
-## 数据统计（粗糙）
-
-![image](https://github.com/user-attachments/assets/eb810f82-3875-4b45-ae8d-45e636bf2d33)
-
-
-## 用户管理
-
-![image](https://github.com/user-attachments/assets/0a8014ee-69f3-4a6e-ae0e-4c50d8c1c9fd)
-
-
-## 账号管理
-
-包含gpt和claude账号管理
-
-![image](https://github.com/user-attachments/assets/669edf84-a2e7-4541-9f7b-9510ca6b4264)
-
-![image](https://github.com/user-attachments/assets/594a295f-9942-41e6-8e6d-735bdf6fe710)
-
-
-## 订阅管理
-
-![image](https://github.com/user-attachments/assets/ca5fe696-b2c2-40dd-bb65-c9f671556d4b)
-
-
-## 营销管理
-
-包含公告通知、优惠卷、激活码
-
-![image](https://github.com/user-attachments/assets/527dcf59-5e61-4c83-a88f-7aa32290b9be)
-
-![image](https://github.com/user-attachments/assets/e2b8563d-9e22-4adc-b928-88d58005ab21)
-
-![image](https://github.com/user-attachments/assets/c836b58b-dbb0-4d75-b49b-a68a1158f4b5)
-
-![image](https://github.com/user-attachments/assets/49cca475-2250-430b-a776-d468c093615e)
-
-
-## 订单管理
-
-包含支付设置、订单信息
-
-![image](https://github.com/user-attachments/assets/548957f8-7f77-45f1-ad7c-495c25bc2d94)
-
-![image](https://github.com/user-attachments/assets/a77778b3-dbfe-4279-860b-eef866f101c6)
-
-![image](https://github.com/user-attachments/assets/c7516b50-4b7c-490f-b6ae-5eb564ed46e5)
-
-
-## 对话管理
-
-![image](https://github.com/user-attachments/assets/04fd4cf0-4c89-4420-bfb8-3301f8206f87)
-
-
-## 系统配置
-
-包含系统设置、会员管理、邮箱配置、前台配置、节点设置
-
-![image](https://github.com/user-attachments/assets/ce286501-cba3-4f33-83fc-767209d6920b)
-
-![image](https://github.com/user-attachments/assets/58ba5d9d-59e0-4842-b018-a52ea5efd6bd)
-
-![image](https://github.com/user-attachments/assets/d270024c-37e4-4b6b-a752-c3eeb4d74a92)
-
-![image](https://github.com/user-attachments/assets/ae9fc766-1f8e-42d8-b5b4-60b002660ef1)
-
-![image](https://github.com/user-attachments/assets/ea10ef3a-538e-4de3-9d71-2ef9ba29bcf9)
-
-# 选车页面手机端显示
-
-![image](https://github.com/user-attachments/assets/8e548a15-5ea6-4092-87da-31ca4d42d3a5)
-
-![image](https://github.com/user-attachments/assets/eb98622b-2053-40fc-a1eb-a4ffbf5d2a12)
-
-![image](https://github.com/user-attachments/assets/1cac2a9c-2340-4b82-b649-89be8816d013)
-
-![image](https://github.com/user-attachments/assets/88420edb-93e7-487f-a489-3d4035c40d0b)
-
-![image](https://github.com/user-attachments/assets/c4e1cb36-8b04-4ecb-92d6-a8c47e739060)
-
-
 # 如果访问受限，请联系我ip过白。
 
 ![1730078998194](https://github.com/user-attachments/assets/d2992892-f19a-4389-ab82-24cf0bcccdd3)
@@ -248,7 +254,8 @@ reverse_proxy localhost:8300
 
 # expander 交流群
 
-![image](https://github.com/user-attachments/assets/5aea5554-300a-4327-9c43-49c3bee3abcc)
+![image](https://github.com/user-attachments/assets/4b9df480-cf7f-49de-bb79-be1b2715aaf8)
+
 
 
 
