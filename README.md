@@ -39,6 +39,7 @@
 - 对话页面会员到期3天提醒
 - 换车继续聊
 - 每日签到功能
+- 所有模型独立
 - 更多功能以测试站为准
 
 # 更新日志及开发计划
@@ -265,7 +266,8 @@ reverse_proxy localhost:8300
 
 # expander 交流群
 
-![image](https://github.com/user-attachments/assets/4b9df480-cf7f-49de-bb79-be1b2715aaf8)
+![image](https://github.com/user-attachments/assets/08868304-766e-4d97-ad63-94c8c8276e1e)
+
 
 
 
