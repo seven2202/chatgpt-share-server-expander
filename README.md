@@ -12,6 +12,12 @@
 ### 同时支持ChatGPT、claude、grok。
 ### 不限制用户数量，演示站：https://940309.xyz
 
+## 部署文档
+【详细的部署文档】(https://tcnegz9bslrt.feishu.cn/wiki/V8ruwD96hi9Dalk1wDWcRLgznrS?from=from_copylink)
+
+# 如果搞不定，提供有偿部署服务。
+
+
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持多种节点划分：免费、4o、plus、claude节点、api节点
@@ -180,10 +186,6 @@ https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
 
 ![image](https://github.com/user-attachments/assets/305c57b4-6a40-4ce3-9c45-49e433cd6c88)
 
-## 部署文档
-https://tcnegz9bslrt.feishu.cn/wiki/V8ruwD96hi9Dalk1wDWcRLgznrS?from=from_copylink
-
-# 如果搞不定，提供有偿部署服务。
 
 
 
