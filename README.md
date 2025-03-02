@@ -6,10 +6,11 @@
 
 - **[chatgpt-share-server](https://github.com/xyhelper/chatgpt-share-server-deploy)**，感谢 xyhelper 大佬。
 - **[fuclaude](https://github.com/wozulong/fuclaude)**，感谢 wozulong 大佬。
+- **[grok](https://github.com/lyy0709/grok-share-server-deploy)**，感谢 lyy0709 大佬。
 
 # chatgpt-share-server-expander(付费版)
-### 同时支持ChatGPT和claude。
-### 99/月。不限制用户数量，新增需求不额外收费。演示站：https://940309.xyz
+### 同时支持ChatGPT、claude、grok。
+### 不限制用户数量，演示站：https://940309.xyz
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
@@ -262,11 +263,6 @@ reverse_proxy localhost:8300
 # 如果访问受限，请联系我ip过白。
 
 ![1730078998194](https://github.com/user-attachments/assets/d2992892-f19a-4389-ab82-24cf0bcccdd3)
-
-
-# expander 交流群
-
-![image](https://github.com/user-attachments/assets/08868304-766e-4d97-ad63-94c8c8276e1e)
 
 
 
