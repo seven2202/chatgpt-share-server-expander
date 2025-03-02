@@ -12,11 +12,11 @@
 ### 同时支持ChatGPT、claude、grok。
 ### 不限制用户数量，演示站：https://940309.xyz
 
-## 部署文档
-【详细的部署文档】(https://tcnegz9bslrt.feishu.cn/wiki/V8ruwD96hi9Dalk1wDWcRLgznrS?from=from_copylink)
+**[详细的部署文档](https://tcnegz9bslrt.feishu.cn/wiki/V8ruwD96hi9Dalk1wDWcRLgznrS?from=from_copylin)**
 
-# 如果搞不定，提供有偿部署服务。
+**[更新日志及开发计划](https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2)**
 
+## 文档不经常更新，请以演示站为准。
 
 # 功能优势
 - 支持邮箱注册、登录、找回密码
@@ -49,10 +49,6 @@
 - 所有模型独立
 - 更多功能以测试站为准
 
-# 更新日志及开发计划
-https://docs.qq.com/doc/DQlh2QXdQdG9rUFZQ?u=69a770bc021543a98f39cd968dc02db2
-
-## 文档不经常更新，请以演示站为准。
 
 - 官网登录注册ui
 ![image](https://github.com/user-attachments/assets/29fd9252-20b8-49ca-99ff-bdbd364ef756)
