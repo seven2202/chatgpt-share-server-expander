@@ -1,1 +1,1180 @@
-const _0x3547c7=_0x5f32;(function(_0x4d9e38,_0x539e14){const _0x14a751=_0x5f32,_0x5f05e3=_0x4d9e38();while(!![]){try{const _0x77125e=parseInt(_0x14a751(0x142))/0x1*(-parseInt(_0x14a751(0x205))/0x2)+-parseInt(_0x14a751(0x1a0))/0x3*(-parseInt(_0x14a751(0x177))/0x4)+parseInt(_0x14a751(0x124))/0x5+-parseInt(_0x14a751(0x230))/0x6*(parseInt(_0x14a751(0x21b))/0x7)+-parseInt(_0x14a751(0x26e))/0x8+-parseInt(_0x14a751(0x23e))/0x9*(parseInt(_0x14a751(0x241))/0xa)+parseInt(_0x14a751(0x25f))/0xb;if(_0x77125e===_0x539e14)break;else _0x5f05e3['push'](_0x5f05e3['shift']());}catch(_0x13cdad){_0x5f05e3['push'](_0x5f05e3['shift']());}}}(_0x23d3,0xaf6a3));let $menu,$menuButton,validityText,usageText,htmlClass=$(_0x3547c7(0x17c))['attr'](_0x3547c7(0x23f)),isVisitor=getCookie(_0x3547c7(0x1de)),FAQ,siteNotice,backApiUrl,enableSiteShop,fkAddress,originUrl=window[_0x3547c7(0x209)][_0x3547c7(0x178)],enableExpirationReminder,hasAccess,enableNoLogin,enableBackNode,showUserUsage,enableShowRemaining,enableNoSelectCar;function loadExternalScript(_0x9a24a2,_0x55806e){const _0x6e86b1=_0x3547c7;let _0x3318e0=document[_0x6e86b1(0x165)](_0x6e86b1(0x210));_0x3318e0[_0x6e86b1(0x14f)]=_0x9a24a2,_0x3318e0['type']=_0x6e86b1(0x11b),_0x3318e0[_0x6e86b1(0x235)]=_0x55806e,_0x3318e0[_0x6e86b1(0x25b)]=()=>console[_0x6e86b1(0x1cf)](_0x6e86b1(0x246)+_0x9a24a2),document[_0x6e86b1(0x247)]['appendChild'](_0x3318e0);}loadExternalScript('/jquery.min.js',()=>{const _0x444d33=_0x3547c7;console['log'](_0x444d33(0x180));let _0x257809=document[_0x444d33(0x165)]('link');_0x257809[_0x444d33(0x22d)]='stylesheet',_0x257809['href']=_0x444d33(0x22e),document[_0x444d33(0x247)][_0x444d33(0x157)](_0x257809),loadExternalScript(_0x444d33(0x223),()=>{const _0x5d9966=_0x444d33;console[_0x5d9966(0x20f)](_0x5d9966(0x1c5)),initLayUI();}),loadExternalScript(_0x444d33(0x14c),function(){const _0x4ff8d9=_0x444d33;console[_0x4ff8d9(0x20f)](_0x4ff8d9(0x24e)),loadExternalScript('/app/libs/FileSaver.min.js',function(){const _0x49d371=_0x4ff8d9;console[_0x49d371(0x20f)](_0x49d371(0x17e));}),loadExternalScript(_0x4ff8d9(0x132),function(){const _0x262cec=_0x4ff8d9;console[_0x262cec(0x20f)]('mhtmlToWord.js\x20已加载完成');});});});function isMobile(){const _0x1bfb0c=_0x3547c7,_0x2116c3=navigator[_0x1bfb0c(0x265)]['toLowerCase']();return/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/[_0x1bfb0c(0x254)](_0x2116c3);};function showAnnouncement(_0x4c7200){const _0x433135=_0x3547c7,_0x2189d4=localStorage[_0x433135(0x160)](_0x433135(0x1bb));if(_0x4c7200&&_0x2189d4!==_0x4c7200){const _0x5e442f=isMobile();width=_0x5e442f?$(window)[_0x433135(0x1b9)]():0x320||Math[_0x433135(0x166)]($(window)[_0x433135(0x1b9)](),0x400),height=_0x5e442f?$(window)['height']():0x258||Math[_0x433135(0x166)]($(window)[_0x433135(0x208)](),0x320),layer[_0x433135(0x1dd)]({'type':0x1,'title':[_0x433135(0x196),_0x433135(0x206)],'shadeClose':!![],'shade':0.2,'maxmin':!![],'btn':[_0x433135(0x1b0)],'scrollbar':![],'offset':_0x433135(0x172),'area':[width+'px',height+'px'],'content':_0x4c7200,'yes':function(_0x4efaa1){const _0x5e328d=_0x433135;localStorage[_0x5e328d(0x207)](_0x5e328d(0x1bb),_0x4c7200),layer[_0x5e328d(0x266)](_0x4efaa1);}});}}function fetchAnnouncement(){const _0x363f02=_0x3547c7;fetch(_0x363f02(0x1af),{'method':_0x363f02(0x173)})[_0x363f02(0x1ca)](_0x58b2e3=>{const _0xf51a0a=_0x363f02;if(!_0x58b2e3['ok'])throw new Error(_0xf51a0a(0x1a6)+_0x58b2e3[_0xf51a0a(0x128)]);return _0x58b2e3[_0xf51a0a(0x26b)]();})[_0x363f02(0x1ca)](_0x43d01f=>{const _0xe2a5f8=_0x43d01f['data']['content'];showAnnouncement(_0xe2a5f8);})[_0x363f02(0x140)](_0x8e1c8c=>{const _0x1920fd=_0x363f02;console[_0x1920fd(0x1cf)](_0x1920fd(0x139),_0x8e1c8c);});}const setLoading=_0x44a93b=>{const _0xfd3962=_0x3547c7,_0x20cf1c=layer[_0xfd3962(0x16f)](_0x44a93b,{'icon':0x10,'shade':0.01});return _0x20cf1c;},getMenuItemHtml=(_0x585820,_0x211e2b,_0x3aa8c0)=>{const _0x2399cc=_0x3547c7;return'<a\x20style=\x22flex:1;\x22\x20class=\x22flex\x20gap-2\x20rounded\x20p-2.5\x20text-sm\x20cursor-pointer\x20focus:ring-0\x20radix-disabled:pointer-events-none\x20radix-disabled:opacity-50\x20group\x20text-gray-800\x20dark:text-white\x20hover:bg-gray-100\x20dark:hover:bg-gray-700\x22\x20onclick=\x22'+_0x3aa8c0+_0x2399cc(0x1b3)+_0x211e2b+_0x2399cc(0x25a)+_0x585820+_0x2399cc(0x273);};function getCookie(_0x457cb1){const _0x17c7f6=_0x3547c7;var _0x5c355a=';\x20'+document[_0x17c7f6(0x146)],_0x1a2e89=_0x5c355a[_0x17c7f6(0x19b)](';\x20'+_0x457cb1+'=');if(_0x1a2e89[_0x17c7f6(0x13f)]===0x2)return _0x1a2e89[_0x17c7f6(0x259)]()[_0x17c7f6(0x19b)](';')['shift']();}function export2Image(){const _0x488e4b=_0x3547c7,_0x1266ff=setLoading(_0x488e4b(0x15d));if(!document[_0x488e4b(0x1c1)]('flex\x20flex-col\x20text-sm\x20md:pb-9')['length']){layer['msg'](_0x488e4b(0x1ee));return;}var _0x38d9ee=document['getElementsByClassName'](_0x488e4b(0x189))[0x0],_0xcc3b6d=0x2;domtoimage['toBlob'](_0x38d9ee,{'bgcolor':document['documentElement']['style'][_0x488e4b(0x1c8)]===_0x488e4b(0x144)?_0x488e4b(0x216):_0x488e4b(0x1ad),'width':_0x38d9ee[_0x488e4b(0x1c7)]*_0xcc3b6d,'height':_0x38d9ee[_0x488e4b(0x12b)]*_0xcc3b6d,'style':{'transform':_0x488e4b(0x192),'transform-origin':_0x488e4b(0x1b4),'width':_0x488e4b(0x174),'height':_0x488e4b(0x174)},'filter':function(_0x521d0e){const _0x2b9188=_0x488e4b;if(_0x521d0e[_0x2b9188(0x1c4)]===_0x2b9188(0x1a1)&&_0x521d0e['src']&&!_0x521d0e[_0x2b9188(0x14f)][_0x2b9188(0x211)](window[_0x2b9188(0x209)][_0x2b9188(0x178)]))return![];return!![];},'cacheBust':![]})['then'](function(_0x553a49){const _0x5100f4=_0x488e4b,_0x3d9054=document[_0x5100f4(0x165)]('a');_0x3d9054[_0x5100f4(0x233)]=URL[_0x5100f4(0x12c)](_0x553a49),_0x3d9054['download']=(getCurrentTitle()||'聊天记录')+_0x5100f4(0x18e),document[_0x5100f4(0x225)][_0x5100f4(0x157)](_0x3d9054),_0x3d9054[_0x5100f4(0x179)](),document[_0x5100f4(0x225)][_0x5100f4(0x263)](_0x3d9054),layer['close'](_0x1266ff);})['catch'](function(_0x439d3d){const _0x4438a4=_0x488e4b;layer[_0x4438a4(0x16f)](_0x4438a4(0x1f2)),console[_0x4438a4(0x1cf)]('生成图片时出错',_0x439d3d),layer['close'](_0x1266ff);});}function getCurrentTitle(){const _0x28bf50=_0x3547c7;let _0x477d9e=document['getElementsByClassName'](_0x28bf50(0x1e8))[0x0]?.[_0x28bf50(0x237)];return _0x477d9e?_0x477d9e:null;}function addDeliver(){const _0x2243b1=_0x3547c7;let _0x4fe3f1=document[_0x2243b1(0x1c1)](_0x2243b1(0x25e));Array[_0x2243b1(0x159)](_0x4fe3f1)[_0x2243b1(0x1d1)](_0x4c3e85=>{const _0x25048b=_0x2243b1;_0x4c3e85['insertAdjacentHTML']('afterend',_0x25048b(0x1e9));});}function deleteDeliver(){const _0x5342e5=_0x3547c7;let _0x5aef3d=document['getElementsByClassName'](_0x5342e5(0x243));Array[_0x5342e5(0x159)](_0x5aef3d)[_0x5342e5(0x1d1)](_0x152160=>{const _0x29f11d=_0x5342e5;_0x152160[_0x29f11d(0x1ac)]();});}function export2File(){const _0x3c8000=_0x3547c7;if(!document[_0x3c8000(0x1c1)](_0x3c8000(0x189))[_0x3c8000(0x13f)]){layer[_0x3c8000(0x16f)]('未找到聊天记录,\x20无法导出文档,\x20请先选择一个聊天记录');return;}let _0x37a03e=getCurrentTitle();!_0x37a03e&&(_0x37a03e=_0x3c8000(0x1a2)),addDeliver(),exportWord({'selector':_0x3c8000(0x26c),'filename':_0x37a03e}),deleteDeliver();}function isLogin(){const _0x2c2d7d=_0x3547c7;if(isVisitor==_0x2c2d7d(0x1fa)||!isVisitor)return layer[_0x2c2d7d(0x16f)](_0x2c2d7d(0x227)),![];return!![];}function showMenu(){const _0x533b11=_0x3547c7;if(isVisitor==_0x533b11(0x1fa)||!isVisitor)return![];return!![];}(function(){const _0x868518=_0x3547c7,_0x1154d6=window[_0x868518(0x161)];let _0x4380d3=0x0;const _0x2df6da=0x3,_0x2aa258=0x64;window[_0x868518(0x161)]=async function(_0x10f79e,_0x5179c0){const _0xd9a50d=_0x868518;if(_0x10f79e['includes'](_0xd9a50d(0x197)))try{const _0x2fbc46=await _0x1154d6(_0x10f79e,_0x5179c0);_0x2fbc46['ok']&&(_0x4380d3=0x0);if(!_0x2fbc46[_0xd9a50d(0x12d)]['get']('content-type')?.[_0xd9a50d(0x260)](_0xd9a50d(0x126))){const _0x3c60d1=_0x2fbc46['clone'](),_0x266bf4=await _0x3c60d1[_0xd9a50d(0x26b)]();if(_0x2fbc46[_0xd9a50d(0x128)]===0x1f4&&enableNoSelectCar===_0xd9a50d(0x1fa)){console['log'](_0xd9a50d(0x176),_0x2fbc46);if(_0x4380d3<_0x2df6da)return _0x4380d3++,console['log'](_0xd9a50d(0x19c),_0x4380d3),await new Promise(_0x186a2f=>setTimeout(_0x186a2f,_0x2aa258)),window[_0xd9a50d(0x161)](_0x10f79e,_0x5179c0);_0x4380d3>=_0x2df6da&&layer[_0xd9a50d(0x253)](_0xd9a50d(0x23a),{'btn':[_0xd9a50d(0x268),_0xd9a50d(0x12e)],'title':_0xd9a50d(0x1ec)},function(){createNewConversation();},function(){const _0x41080e=_0xd9a50d;layer['msg'](_0x41080e(0x143)),changeConversationCar();});}}return _0x2fbc46;}catch(_0xa5e3a2){console['error'](_0xd9a50d(0x14a),_0xa5e3a2);}finally{setTimeout(()=>{checkError();},0x3e8);}return _0x1154d6(_0x10f79e,_0x5179c0);};}());function banGptAccount(_0xa64e65){const _0x2d67de=_0x3547c7;console[_0x2d67de(0x20f)](_0x2d67de(0x1fb),_0xa64e65),fetch('/api/session/updateGptStatus?carId='+_0xa64e65,{'method':'GET'})[_0x2d67de(0x1ca)](_0x5887c6=>{const _0x194b53=_0x2d67de;console['log'](_0x194b53(0x24a),_0x5887c6);})['catch'](_0x54389e=>{const _0x508f10=_0x2d67de;console[_0x508f10(0x1cf)]('禁用账号失败',_0x54389e);});}const errorText=_0x3547c7(0x190),checkError=()=>{const _0x2fe846=_0x3547c7,_0x5c59ef=$(_0x2fe846(0x225))['text']()['toLowerCase'](),_0x4dc154=errorText['toLowerCase']();console[_0x2fe846(0x20f)](_0x2fe846(0x1eb),_0x4dc154);if(_0x5c59ef['indexOf'](_0x4dc154)===-0x1)return;const _0x40d1bb=getCookie('carid');!_0x40d1bb?autoSelectCarAction():(banGptAccount(_0x40d1bb),autoSelectCarAction());};function changeConversationCar(){const _0x52684a=_0x3547c7;console[_0x52684a(0x20f)]('changeConversationCar'),fetch(_0x52684a(0x1ea))[_0x52684a(0x1ca)](_0x444d97=>_0x444d97[_0x52684a(0x26b)]())[_0x52684a(0x1ca)](_0x1959cf=>{const _0x40cb76=_0x52684a;console[_0x40cb76(0x20f)](_0x1959cf),window['location'][_0x40cb76(0x162)]();})[_0x52684a(0x140)](_0x4bd9f5=>{const _0x10e78b=_0x52684a;console[_0x10e78b(0x1cf)](_0x10e78b(0x1f0),_0x4bd9f5),layer[_0x10e78b(0x16f)](_0x10e78b(0x195));});}function _0x23d3(){const _0x53f77c=['startsWith','enableNoSelectCar','#menuUsage','target','ceil','#212121','/list/#/home','管理员还未配置用站点','管理员还未配置卡密地址','which','9872044vvaXOW','pointer','login(this)','find','layui-btn\x20layui-bg-black\x20layui-btn-radius','gfsessionid','layer','\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x27menuValidity\x27\x20style=\x22flex:1;\x20display:\x20block;\x22\x20class=\x22flex\x20gap-2\x20rounded\x20p-2.5\x20text-sm\x20focus:ring-0\x20radix-disabled:pointer-events-none\x20radix-disabled:opacity-50\x20group\x20text-gray-800\x20dark:text-white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','/app/libs/layui/layui.js','rgba(32,\x2033,\x2035,\x200.9)','body',';\x20expires=','您还未登录,暂时无法使用该功能','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','export2Image(this)','showRedeemDialog','站内公告','350px','rel','/app/libs/layui/css/layui.css','enableNoLogin','6BAnrbl','<div\x20id=\x27menuButton\x27></div>','Bearer\x20','href','accessToken','onload','show','innerText','稍后处理','showGoodsDialog(this)','当前账号对话异常，您希望:','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','div.flex.w-full.items-start.gap-4.rounded-2xl.border.border-token-border-light','#menuButton','1281393wPEreX','class','backApi(this)','80qKJkfK','正在跳转到claude,请稍后...','dom-to-docx','center','卡密兑换','加载失败:\x20','head','carid','layui-icon-read','禁用账号结果','/list/#/external-profile','layui-icon-logout','备用站点','image_nofonts.js\x20已加载完成','append','0\x204px\x2020px\x20rgba(0,0,0,0.1)','POST','您还未登录，请先登录','confirm','test','/api/session/getIdleCar?username=','升级续费','stringify','选车结果','pop','\x20layui-font-20\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','onerror','hide','querySelector','markdown','33992079ZVkZTy','includes','兑换成功！','overflow','removeChild','none','userAgent','close','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','新建会话','/api/sys/site-data','个人中心','json','.markdown','\x22\x20onclick=\x22','10696128nvBhdQ','校验结果','parse','redirected','1000','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>','15%','#000','10%','text/javascript','siteAnnouncement','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','init','classList','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','<div\x20style=\x22padding:\x2050px;\x20line-height:\x2022px;\x20background-color:\x20#fff;\x20color:\x20#333;\x20font-weight:\x20300;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20layui-icon-notice\x22\x20style=\x22font-size:\x2030px;\x20color:\x20#FF9800;\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22margin-top:20px;\x22>尊敬的用户，您的会员已到期！</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','autoSelectClaude(this)','showFAQDialog','4896950WPUZrb','setVoice(this)','text/event-stream','请输入卡密','status','使用说明','获取语音\x20token\x20时出错','scrollHeight','createObjectURL','headers','换车继续','list.js\x2020241223','选车后结果','回到首页','/app/libs/mhtmlToWord.js','/auth/login?carid=','有效期未知','showFAQDialog(this)','e2ee_key','&t=','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x27menuUsage\x27\x20style=\x22flex:1;\x20display:\x20flex;\x20justify-content:\x20space-between;\x22\x20class=\x22gap-2\x20bg-slate-950\x20dark:bg-slate-600\x20rounded\x20p-2.5\x20text-sm\x20focus:ring-0\x20radix-disabled:pointer-events-none\x20radix-disabled:opacity-50\x20group\x20text-gray-800\x20dark:text-white\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>','Error\x20fetching\x20the\x20latest\x20announcement:','/list/#/shop','layui-icon-util','enableShowRemaining','正在为您自动选车,请稍后...','layui-icon-user','length','catch','layui-btn\x20layui-bg-primary\x20\x20layui-btn-radius','96233wElwKq','正在为您自动切换可用账号','dark','observe','cookie','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','finally','setDate','请求出错:','</div>\x0a\x20\x20</button>','/app/libs/dom-to-image_nofonts.js','username','usage','src','logout(this)','showoNoticeDialog','register(this)','stopPropagation','user','goHome(this)','加载中...','appendChild','/backend-api/voice_token','from','.layui-layer-content','false','layui-icon-website','开始将对话导出图片,请稍后...','请先登录','卡密购买','getItem','fetch','reload','display','300px','createElement','min','/api/codes/redeem?key=','layui-icon-file','<div\x20class=\x22flex\x20flex-col\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','#menuValidity','message','removeItem','<div\x20class=\x22flex\x20flex-col\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20block;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22flex\x20\x20gap-2\x20rounded\x20p-2.5\x20text-sm\x20cursor-pointer\x20focus:ring-0\x20radix-disabled:pointer-events-none\x20radix-disabled:opacity-50\x20group\x20text-gray-800\x20dark:text-white\x20hover:bg-gray-100\x20dark:hover:bg-gray-700\x22\x20onclick=\x22showRedeemDialog();\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20layui-icon-gift\x20layui-font-20\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20卡密兑换\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20','fixed','msg','css',';\x22>\x0a\x20\x20\x20\x20<div\x20class=\x22flex\x20w-full\x20gap-2\x20items-center\x20justify-center\x22>','auto','GET','undefinedpx','[data-link]','对话请求响应失败，准备重试','12VBcejc','origin','click','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22flex\x20flex-col\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','blur(8px)','html','/list/#/register','FileSaver.js\x20已加载完成','立即续费','jQuery\x20加载完成','top','正在进入语音,请稍后...','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','code','isDarkMode','getDate','10px\x200','[data-headlessui-state]\x20nav','flex\x20flex-col\x20text-sm\x20md:pb-9','showProfile','layui-hide','Claude','http','.png','自动选车异常,正在为您自动跳转到首页,请重新选择','Internal\x20error.\x20Please\x20try\x20again\x20later','enableExpirationReminder','scale(2)','attributeName','validity','切换会话车失败，请稍后重试','系统通知','/backend-api/conversation','<div\x20id=\x27menu\x27></div>','parent','application/json','split','重试次数','会员有效期:','?c=','\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x09\x09\x09\x09\x0a\x09\x09\x09\x09\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','1016409NqWpXG','IMG','导出文档','兑换失败，请稍后重试','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Idle\x20car\x20not\x20found','HTTP\x20error!\x20status:\x20','您还未登录,请先登录','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','redeemCard','Response\x20from\x20server:','20px','remove','white','documentElement','/api/notice/getLatestNotice','知道了','menuCreateInterval','layui-icon-notice',';\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20','top\x20left','showProfile(this)','setVoice','#headlessui-portal-root','showoNoticeDialog(this)','width','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','lastAnnouncement','HTTP\x20error!\x20Status:\x20','layui-icon-diamond','0\x204px\x2020px\x20rgba(0,0,0,0.3)','layui-icon-home','regLoginButtonInterval','getElementsByClassName','val','认证已过期，请重新登录','tagName','layui\x20加载完成','不限制使用','scrollWidth','colorScheme','#cardKey','then','showGoodsDialog','type','Error\x20parsing\x20JSON:','text','error','hasClass','forEach','trim','use','&userId=','font-size:\x2016px;\x20font-weight:\x20500;','兑换失败，请检查卡密是否正确','addClass','<svg\x20t=\x221728044864664\x22\x20class=\x22icon\x22\x20viewBox=\x220\x200\x201024\x201024\x22\x20version=\x221.1\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20p-id=\x225964\x22\x20width=\x2232\x22\x20height=\x2232\x22><path\x20d=\x22M511.33\x2063c-247.42\x200-448\x20200.57-448\x20448s200.58\x20448\x20448\x20448\x20448-200.58\x20448-448-200.57-448-448-448z\x20m163.42\x20625.54H347.91a42.27\x2042.27\x200\x200\x201\x200-84.53h326.84a42.27\x2042.27\x200\x201\x201\x200\x2084.53z\x20m0-135.25H347.91a42.27\x2042.27\x200\x200\x201\x200-84.53h326.84a42.27\x2042.27\x200\x201\x201\x200\x2084.53z\x20m0-135.24H347.91a42.27\x2042.27\x200\x200\x201\x200-84.53h326.84a42.27\x2042.27\x200\x201\x201\x200\x2084.53z\x22\x20p-id=\x225965\x22\x20fill=\x22#ffffff\x22></path></svg>','12px','userGuideUrl','flex','goHome','open','visitor','layui-layer-rim','无法获取有效期','/api/claude/getClaudeLoginUrl?username=','token','svg.icon-2xl','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22padding:\x2030px\x2025px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22layui-form\x22\x20style=\x22margin:\x200;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22layui-form-item\x22\x20style=\x22margin-bottom:\x2020px;\x20position:\x20relative;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20layui-icon-key\x22\x20style=\x22position:\x20absolute;\x20left:\x2010px;\x20top:\x2012px;\x20color:\x20#999;\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22cardKey\x22\x20required\x20lay-verify=\x22required\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20placeholder=\x22请输入卡密\x22\x20autocomplete=\x22off\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20class=\x22layui-input\x22\x20style=\x22height:\x2040px;\x20line-height:\x2040px;\x20padding-left:\x2035px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22layui-form-item\x22\x20style=\x22margin-bottom:\x200;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22\x20class=\x22layui-btn\x20layui-btn-normal\x20layui-btn-fluid\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22height:\x2040px;\x20line-height:\x2040px;\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onclick=\x22redeemCard()\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20layui-icon-right\x22\x20style=\x22margin-right:\x205px;\x22></i>立即兑换\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','&e=','<svg\x20t=\x221727965674316\x22\x20class=\x22icon\x22\x20viewBox=\x220\x200\x201024\x201024\x22\x20version=\x221.1\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20p-id=\x2218244\x22\x20width=\x2232\x22\x20height=\x2232\x22><path\x20d=\x22M512\x200C228.266667\x200\x200\x20228.266667\x200\x20512s228.266667\x20512\x20512\x20512\x20512-228.266667\x20512-512S795.733333\x200\x20512\x200z\x20m234.666667\x20731.733333H277.333333c-23.466667\x200-42.666667-19.2-42.666666-42.666666s19.2-42.666667\x2042.666666-42.666667h469.333334c23.466667\x200\x2042.666667\x2019.2\x2042.666666\x2042.666667s-19.2\x2042.666667-42.666666\x2042.666666z\x20m0-177.066666H277.333333c-23.466667\x200-42.666667-19.2-42.666666-42.666667s19.2-42.666667\x2042.666666-42.666667h469.333334c23.466667\x200\x2042.666667\x2019.2\x2042.666666\x2042.666667s-19.2\x2042.666667-42.666666\x2042.666667z\x20m0-177.066667H277.333333c-23.466667\x200-42.666667-19.2-42.666666-42.666667s19.2-42.666667\x2042.666666-42.666666h469.333334c23.466667\x200\x2042.666667\x2019.2\x2042.666666\x2042.666666s-19.2\x2042.666667-42.666666\x2042.666667z\x22\x20p-id=\x2218245\x22\x20fill=\x22#2c2c2c\x22></path></svg>','style','bg-token-sidebar-surface-secondary','<div\x20class=\x22dom-to-docx\x22><br><br>&nbsp;&nbsp;<br><br></div>','/backend-api/change_conversation_car','errorTextLower','选择操作','正在兑换,请稍后...','未找到聊天记录,\x20无法导出图片,\x20请先选择一个聊天记录','createNewConversation','切换会话车失败:','#fff','生成图片时出错','未能成功获取Claude登录地址,请稍后重试',';\x20path=/','LAY_layuipro','Error:','layui-icon-mike','您没有权限��问该功能','innerHTML','true','禁用账号','hasAccess','There\x20was\x20a\x20problem\x20with\x20the\x20fetch\x20operation:','data','closeAll','授权成功','<div\x20style=\x22padding:\x2050px;\x20line-height:\x2022px;\x20background-color:\x20#fff;\x20color:\x20#333;\x20font-weight:\x20300;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22layui-icon\x20layui-icon-notice\x22\x20style=\x22font-size:\x2030px;\x20color:\x20#FF9800;\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22margin-top:20px;\x22>尊敬的用户，您的会员有效期将在\x20','自动选车失败,将回到首页','获取有效期失败:','layui-icon-senior','10aSTJwY','font-size:\x2018px;','setItem','height','location','autoSelectCarAction(this)','string','ajax','carID','=;\x20expires=Thu,\x2001\x20Jan\x201970\x2000:00:00\x20UTC;\x20path=/;','log','script'];_0x23d3=function(){return _0x53f77c;};return _0x23d3();}function createNewConversation(){const _0x295242=_0x3547c7;console[_0x295242(0x20f)](_0x295242(0x1ef)),window[_0x295242(0x209)][_0x295242(0x233)]='/';}function getUserId(){const _0xd54607=_0x3547c7,_0x4ee267=localStorage[_0xd54607(0x160)](_0xd54607(0x154));let _0x465313;if(_0x4ee267)try{const _0x4fa99d=JSON['parse'](_0x4ee267);_0x465313=_0x4fa99d['id'];}catch(_0x925a4){console['error'](_0xd54607(0x1cd),_0x925a4);}return _0x465313;}function backApi(){const _0x710eee=_0x3547c7;if(backApiUrl){const _0x356900=getUserId(),_0x58171e=localStorage['getItem'](_0x710eee(0x234));fetch('/api/user/checkAccess?userId='+encodeURIComponent(_0x356900),{'method':'GET','headers':{'Authorization':_0x710eee(0x232)+_0x58171e}})[_0x710eee(0x1ca)](_0x11e1b9=>{const _0x3e685d=_0x710eee;if(!_0x11e1b9['ok'])throw new Error(_0x3e685d(0x1a6)+_0x11e1b9[_0x3e685d(0x128)]);return _0x11e1b9['json']();})[_0x710eee(0x1ca)](_0x3a2693=>{const _0x21494f=_0x710eee;console[_0x21494f(0x20f)](_0x21494f(0x26f),_0x3a2693),_0x3a2693[_0x21494f(0x1fe)]===!![]?window[_0x21494f(0x1dd)](backApiUrl):layer['msg'](_0x21494f(0x1f8));})['catch'](_0x4b95b9=>{const _0x4db7bd=_0x710eee;console[_0x4db7bd(0x1cf)](_0x4db7bd(0x1f6),_0x4b95b9);});}else layer[_0x710eee(0x16f)](_0x710eee(0x218));}function setSessionCookie(_0x2e5fca,_0x3195d0){const _0x1fc725=_0x3547c7,_0x45558b=new Date();_0x45558b[_0x1fc725(0x149)](_0x45558b[_0x1fc725(0x186)]()+0x1e),document[_0x1fc725(0x146)]=_0x2e5fca+'='+_0x3195d0+_0x1fc725(0x226)+_0x45558b['toUTCString']()+_0x1fc725(0x1f4);}function deleteCookie(_0x58a0e1){const _0x5962af=_0x3547c7;document[_0x5962af(0x146)]=_0x58a0e1+_0x5962af(0x20e);}function logout(){const _0x4f6ae8=_0x3547c7;deleteCookie(_0x4f6ae8(0x220)),setSessionCookie('visitor',!![]),localStorage[_0x4f6ae8(0x16c)]('accessToken'),window[_0x4f6ae8(0x209)][_0x4f6ae8(0x233)]=originUrl;}function autoSelectClaude(){const _0x2fc4d1=_0x3547c7;if(isLogin()){const _0xe66562=setLoading(_0x2fc4d1(0x242)),_0x3a22a9=getCookie(_0x2fc4d1(0x14d));fetch(_0x2fc4d1(0x1e1)+encodeURIComponent(_0x3a22a9))[_0x2fc4d1(0x1ca)](_0x55dabf=>{const _0x26555d=_0x2fc4d1;if(!_0x55dabf['ok'])throw new Error(_0x26555d(0x1bc)+_0x55dabf[_0x26555d(0x128)]);return _0x55dabf['text']();})[_0x2fc4d1(0x1ca)](_0x15d132=>{const _0x5d7edb=_0x2fc4d1;console[_0x5d7edb(0x20f)](_0x5d7edb(0x1aa),_0x15d132);let _0x18db69;try{_0x18db69=JSON[_0x5d7edb(0x270)](_0x15d132);}catch(_0x254531){_0x18db69=_0x15d132;}typeof _0x18db69===_0x5d7edb(0x20b)?window[_0x5d7edb(0x209)][_0x5d7edb(0x233)]=_0x18db69:_0x18db69&&_0x18db69['code']!==0x1?(console[_0x5d7edb(0x20f)](_0x18db69[_0x5d7edb(0x16f)]),layer[_0x5d7edb(0x16f)](_0x18db69[_0x5d7edb(0x16f)])):layer['msg'](_0x5d7edb(0x1f3));})[_0x2fc4d1(0x140)](_0x27b2a1=>{const _0x335457=_0x2fc4d1;console[_0x335457(0x1cf)](_0x335457(0x1fd),_0x27b2a1);})[_0x2fc4d1(0x148)](()=>{layer['close'](_0xe66562);});}}function autoSelectCarAction(){const _0x308cdc=_0x3547c7;if(isLogin()){const _0x24e8b7=setLoading(_0x308cdc(0x13d)),_0x390ff7=localStorage[_0x308cdc(0x160)]('accessToken');!_0x390ff7&&(layer[_0x308cdc(0x16f)](_0x308cdc(0x1a7)),goHome());const _0x113551=getCookie(_0x308cdc(0x14d));!_0x113551&&layer['msg'](_0x308cdc(0x252)),fetch(_0x308cdc(0x255)+encodeURIComponent(_0x113551),{'method':_0x308cdc(0x173),'headers':{'Authorization':_0x308cdc(0x232)+_0x390ff7}})[_0x308cdc(0x1ca)](_0x30bb1d=>{const _0x39480d=_0x308cdc;console['log'](_0x39480d(0x258),_0x30bb1d);if(!_0x30bb1d['ok'])throw new Error(_0x39480d(0x1bc)+_0x30bb1d[_0x39480d(0x128)]);return _0x30bb1d[_0x39480d(0x1ce)]();})[_0x308cdc(0x1ca)](_0x150f6b=>{const _0x1a81e0=_0x308cdc,_0x3be94b=JSON['parse'](_0x150f6b),_0x22ece4=_0x3be94b[_0x1a81e0(0x20d)],_0x2dc7ac=_0x3be94b['nodeType'],_0x442fa8=_0x3be94b['planType'];if(_0x22ece4){const _0x485644=getCookie(_0x1a81e0(0x14d));(!_0x485644||!_0x2dc7ac)&&(layer[_0x1a81e0(0x16f)](_0x1a81e0(0x18f)),goHome());let _0xa64f6c={'usertoken':_0x485644,'carid':_0x22ece4,'nodeType':_0x2dc7ac,'planType':_0x442fa8};fetch(_0x1a81e0(0x133)+_0x22ece4,{'method':_0x1a81e0(0x251),'headers':{'Content-Type':_0x1a81e0(0x19a)},'body':JSON[_0x1a81e0(0x257)](_0xa64f6c)})['then'](_0x28f82d=>{const _0x31813b=_0x1a81e0;console[_0x31813b(0x20f)](_0x31813b(0x130),_0x28f82d),_0x28f82d[_0x31813b(0x271)]?(setSessionCookie(_0x31813b(0x248),_0x22ece4),window['location'][_0x31813b(0x233)]='/'):layer[_0x31813b(0x16f)]('自动选车失败,请回到首页后手动选择');});}else throw new Error(_0x1a81e0(0x1a5));})[_0x308cdc(0x140)](_0x29c0b9=>{const _0x3c1e0d=_0x308cdc;console[_0x3c1e0d(0x1cf)](_0x3c1e0d(0x1f6),_0x29c0b9),layer[_0x3c1e0d(0x16f)](_0x3c1e0d(0x202)),goHome();})['finally'](()=>{const _0x42a10b=_0x308cdc;layer[_0x42a10b(0x266)](_0x24e8b7);});}}function _0x5f32(_0x19ec4b,_0x41f64d){const _0x23d308=_0x23d3();return _0x5f32=function(_0x5f32e0,_0x228fb6){_0x5f32e0=_0x5f32e0-0x11b;let _0x56b6cf=_0x23d308[_0x5f32e0];return _0x56b6cf;},_0x5f32(_0x19ec4b,_0x41f64d);}function createMenuIcon(){const _0x8bdaf3=_0x3547c7;return htmlClass===_0x8bdaf3(0x144)?_0x8bdaf3(0x1d8):_0x8bdaf3(0x1e6);}function fetchValidity(){return new Promise((_0x516796,_0x3672b7)=>{const _0x3b68b0=_0x5f32,_0x45df72=getCookie('username');$[_0x3b68b0(0x20c)]({'url':'/api/user/validity-usage?username='+encodeURIComponent(_0x45df72),'method':_0x3b68b0(0x173),'success':function(_0x5aae60){const _0x121c10=_0x3b68b0;validityText=_0x5aae60[_0x121c10(0x194)]?''+_0x5aae60[_0x121c10(0x194)]:_0x121c10(0x134),usageText=_0x5aae60['usage']?''+_0x5aae60[_0x121c10(0x14e)]:_0x121c10(0x1c6),$(_0x121c10(0x16a))[_0x121c10(0x1ce)](_0x121c10(0x19d)+validityText),$('#menuUsage')['text'](usageText),_0x516796(validityText);},'error':function(_0x5a5caa){const _0x512566=_0x3b68b0;validityText=_0x512566(0x1e0),usageText='无法获取使用量',$(_0x512566(0x16a))[_0x512566(0x1ce)](_0x512566(0x19d)+validityText),$(_0x512566(0x213))['text'](usageText),_0x3672b7(_0x5a5caa);}});});}function updateThemeStyles(){const _0x496733=_0x3547c7,_0xe72ee7=document[_0x496733(0x1ae)][_0x496733(0x11f)]['contains'](_0x496733(0x144));console['log'](_0x496733(0x185),_0xe72ee7),$menuButton=$(_0x496733(0x231))[_0x496733(0x170)]({'position':_0x496733(0x16e),'right':_0x496733(0x1ab),'top':_0x496733(0x276),'display':_0x496733(0x1db),'alignItems':_0x496733(0x244),'justifyContent':_0x496733(0x244),'background':'transparent','cursor':_0x496733(0x21c),'zIndex':_0x496733(0x272),'color':_0xe72ee7?'#fff':_0x496733(0x275)})[_0x496733(0x17c)](createMenuIcon()),$menu=$(_0x496733(0x198))[_0x496733(0x170)]({'position':_0x496733(0x16e),'right':_0x496733(0x1ab),'top':_0x496733(0x274),'background':_0xe72ee7?_0x496733(0x224):_0x496733(0x1ad),'borderRadius':_0x496733(0x1d9),'padding':_0x496733(0x187),'boxShadow':_0xe72ee7?_0x496733(0x1be):_0x496733(0x250),'display':_0x496733(0x264),'zIndex':'999','backdropFilter':'blur(8px)','webkitBackdropFilter':_0x496733(0x17b),'color':_0xe72ee7?_0x496733(0x1f1):_0x496733(0x275)});const _0x46e59b=new MutationObserver(_0x2abdaf=>{const _0x4466d0=_0x496733;_0x2abdaf[_0x4466d0(0x1d1)](_0x233a15=>{const _0x14c033=_0x4466d0;_0x233a15[_0x14c033(0x193)]===_0x14c033(0x23f)&&updateThemeStyles();});}),_0x54cdc9={'attributes':!![],'attributeFilter':[_0x496733(0x23f)]};_0x46e59b[_0x496733(0x145)](document[_0x496733(0x1ae)],_0x54cdc9);}function createMenu(){const _0x348b77=_0x3547c7;if($(_0x348b77(0x23d))['length']===0x0){let _0x496f3b='<div\x20class=\x22flex\x20flex-col\x20space-y-2\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22display:\x20flex;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+getMenuItemHtml(_0x348b77(0x131),_0x348b77(0x1bf),_0x348b77(0x155))+_0x348b77(0x11d)+getMenuItemHtml('自动选车',_0x348b77(0x13b),_0x348b77(0x20a))+_0x348b77(0x1a4)+getMenuItemHtml('个人中心','layui-icon-user',_0x348b77(0x1b5))+_0x348b77(0x11d)+getMenuItemHtml(_0x348b77(0x256),_0x348b77(0x1bd),_0x348b77(0x239))+_0x348b77(0x183)+getMenuItemHtml('站内公告','layui-icon-notice','showoNoticeDialog(this)')+_0x348b77(0x120)+getMenuItemHtml(_0x348b77(0x129),'layui-icon-read',_0x348b77(0x135))+_0x348b77(0x228)+getMenuItemHtml(_0x348b77(0x1a2),_0x348b77(0x168),'export2File(this)')+_0x348b77(0x120)+getMenuItemHtml('导出图片','layui-icon-picture',_0x348b77(0x229))+_0x348b77(0x1a8)+getMenuItemHtml('实时语音',_0x348b77(0x1f7),_0x348b77(0x125))+_0x348b77(0x11d)+getMenuItemHtml(_0x348b77(0x18c),_0x348b77(0x204),_0x348b77(0x122))+_0x348b77(0x1ba)+getMenuItemHtml(_0x348b77(0x24d),_0x348b77(0x15c),_0x348b77(0x240))+_0x348b77(0x11d)+getMenuItemHtml('退出登录',_0x348b77(0x24c),_0x348b77(0x150))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>';$menu[_0x348b77(0x24f)](_0x496f3b),$(_0x348b77(0x225))[_0x348b77(0x24f)]($menuButton),$(_0x348b77(0x225))['append']($menu),$menu[_0x348b77(0x236)](),$menuButton[_0x348b77(0x179)](function(){$menu['toggle']();});}}function showExpireTip(){const _0x19b40b=_0x3547c7;if(validityText){let _0x4c7519=new Date(validityText),_0x25d2ae=new Date(),_0x17bc7f=_0x4c7519-_0x25d2ae,_0x32dd07=Math[_0x19b40b(0x215)](_0x17bc7f/(0x3e8*0x3c*0x3c*0x18));if(_0x32dd07<=0x3&&_0x32dd07>0x0)layer['open']({'type':0x1,'title':![],'closeBtn':![],'area':[_0x19b40b(0x164),'auto'],'shade':0.8,'id':_0x19b40b(0x1f5),'btn':[_0x19b40b(0x17f),'稍后处理'],'btnAlign':'c','moveType':0x1,'content':_0x19b40b(0x201)+_0x32dd07+'\x20天后过期</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>','yes':function(){showGoodsDialog();}});else _0x32dd07<=0x0&&layer['open']({'type':0x1,'title':![],'closeBtn':![],'area':[_0x19b40b(0x164),_0x19b40b(0x172)],'shade':0.8,'id':_0x19b40b(0x1f5),'btn':[_0x19b40b(0x17f),_0x19b40b(0x238)],'btnAlign':'c','moveType':0x1,'content':_0x19b40b(0x121),'yes':function(){showGoodsDialog();}});}else console[_0x19b40b(0x20f)](validityText);}(function init(){const _0x4c0bdb=_0x3547c7;getConfig(),console['log'](_0x4c0bdb(0x12f));}());function getConfig(){const _0x4c9e0a=_0x3547c7,_0xe52b80=_0x4c9e0a(0x269);fetch(_0xe52b80)[_0x4c9e0a(0x1ca)](_0x5d4521=>_0x5d4521[_0x4c9e0a(0x26b)]())[_0x4c9e0a(0x1ca)](({code:_0x371b4f,data:_0x3c4013})=>{const _0x3830d9=_0x4c9e0a;_0x371b4f===0x1?(siteNotice=_0x3c4013[_0x3830d9(0x11c)],FAQ=_0x3c4013[_0x3830d9(0x1da)],backApiUrl=_0x3c4013['backupUrl'],enableSiteShop=_0x3c4013['enableSiteShop'],enableExpirationReminder=_0x3c4013[_0x3830d9(0x191)],fkAddress=_0x3c4013['fkAddress'],hasAccess=_0x3c4013[_0x3830d9(0x1fc)],enableNoLogin=_0x3c4013[_0x3830d9(0x22f)],enableBackNode=_0x3c4013['enableBackNode'],enableShowRemaining=_0x3c4013[_0x3830d9(0x13c)],enableNoSelectCar=_0x3c4013[_0x3830d9(0x212)],enableBackNode==_0x3830d9(0x1fa)&&deleteCookie(_0x3830d9(0x220)),enableNoLogin==_0x3830d9(0x15b)&&setSessionCookie('visitor',![]),!hasAccess||hasAccess!=_0x3830d9(0x1fa)?($menuButton&&$menuButton[_0x3830d9(0x1ac)](),$menu&&$menu[_0x3830d9(0x1ac)](),$(_0x3830d9(0x16a))[_0x3830d9(0x1ce)](''),$('#menuUsage')[_0x3830d9(0x1ce)](''),$('.draggable.relative.h-full.w-full.flex-1.items-start\x20nav>div:nth-child(3)')['empty'](),$menu=null,$menuButton=null,window[_0x3830d9(0x1b1)]&&clearInterval(window[_0x3830d9(0x1b1)]),window[_0x3830d9(0x1c0)]&&clearInterval(window[_0x3830d9(0x1c0)])):console[_0x3830d9(0x20f)](_0x3830d9(0x200))):layer[_0x3830d9(0x16f)](_0x3c4013);})[_0x4c9e0a(0x140)](_0x1252a3=>{const _0x49e6ff=_0x4c9e0a;$(_0x49e6ff(0x16a))[_0x49e6ff(0x1ce)](''),$(_0x49e6ff(0x213))[_0x49e6ff(0x1ce)](''),$menu&&$menu['hide']();});}function initLayUI(){const _0x36a6e2=_0x3547c7;layui[_0x36a6e2(0x1d3)](['layer'],function(){const _0x161508=_0x36a6e2;var _0x1ae2a7=layui[_0x161508(0x221)];const _0x464da7=_0x5632c6=>{const _0x4c970f=_0x161508;if(!_0x5632c6)return;!isMobile()&&($(_0x4c970f(0x188))[_0x4c970f(0x199)]()[_0x4c970f(0x1d7)](_0x4c970f(0x18b)),$(_0x4c970f(0x1b7))['addClass'](_0x4c970f(0x18b)));};window[_0x161508(0x18a)]=_0x2bb733=>{const _0x467fea=_0x161508;isLogin()&&(_0x464da7(_0x2bb733),_0x141749(_0x467fea(0x26a),_0x467fea(0x24b),0x258,0x3e8,0x2));},window[_0x161508(0x123)]=_0x5b3859=>{const _0x210fd5=_0x161508;_0x464da7(_0x5b3859),_0x141749('使用说明',FAQ,0x258,0x3e8,FAQ[_0x210fd5(0x211)](_0x210fd5(0x18d))?0x2:0x1);},window[_0x161508(0x1cb)]=_0x4fd73d=>{const _0x553032=_0x161508;isLogin()&&(_0x464da7(_0x4fd73d),enableSiteShop==_0x553032(0x1fa)?_0x141749('站内购买',originUrl+_0x553032(0x13a),0x258,0x3e8,0x2):fkAddress?_0x141749(_0x553032(0x15f),fkAddress,0x2bc,0x4b0,0x2):_0x1ae2a7[_0x553032(0x16f)](_0x553032(0x219)));},window[_0x161508(0x151)]=_0x45f918=>{const _0x5e8293=_0x161508;_0x464da7(_0x45f918),_0x141749(_0x5e8293(0x22b),siteNotice,0x258,0x3e8,siteNotice['startsWith'](_0x5e8293(0x18d))?0x2:0x1);};const _0xdc530=(_0x2a550c,_0x202567,_0x523151)=>{const _0x3129a6=_0x161508;return'<button\x20class=\x22'+_0x2a550c+_0x3129a6(0x26d)+_0x523151+_0x3129a6(0x171)+_0x202567+_0x3129a6(0x14b);},_0x412145=()=>{const _0x3233e3=_0x161508,_0x450027=document[_0x3233e3(0x25d)](_0x3233e3(0x23c));_0x450027&&(_0x450027[_0x3233e3(0x1e7)][_0x3233e3(0x163)]='none',_0x450027[_0x3233e3(0x1ac)]());var _0x4dcf50=$('.draggable.relative.h-full.w-full.flex-1.items-start\x20nav>div:nth-child(3)');if(_0x4dcf50[_0x3233e3(0x13f)]===0x0)return;var _0x3a796c=!![];_0x4dcf50['each'](function(){const _0xdef0d6=_0x3233e3;if(!$(this)[_0xdef0d6(0x1d0)]('init'))return _0x3a796c=![],![];});if(_0x3a796c)return;_0x4dcf50[_0x3233e3(0x1d7)](_0x3233e3(0x11e));let _0x56a6f9='';isVisitor==_0x3233e3(0x15b)?_0x56a6f9=_0x3233e3(0x16d)+(enableShowRemaining==='true'?_0x3233e3(0x138)+(usageText||_0x3233e3(0x156))+_0x3233e3(0x147):'')+_0x3233e3(0x222)+(_0x3233e3(0x19d)+validityText||'加载中...')+_0x3233e3(0x19f)+getMenuItemHtml(_0x3233e3(0x26a),_0x3233e3(0x13e),_0x3233e3(0x1b5))+_0x3233e3(0x11d)+getMenuItemHtml(_0x3233e3(0x256),_0x3233e3(0x1bd),_0x3233e3(0x239))+_0x3233e3(0x23b):($('button[data-testid=\x27profile-button\x27]')[_0x3233e3(0x25c)](),_0x56a6f9=_0x3233e3(0x169)+getMenuItemHtml(_0x3233e3(0x22b),_0x3233e3(0x1b2),_0x3233e3(0x1b8))+_0x3233e3(0x11d)+getMenuItemHtml(_0x3233e3(0x129),_0x3233e3(0x249),_0x3233e3(0x135))+_0x3233e3(0x17a)+_0xdc530(_0x3233e3(0x21f),'登录',_0x3233e3(0x21d))+_0x3233e3(0x17a)+_0xdc530(_0x3233e3(0x141),'注册',_0x3233e3(0x152))+_0x3233e3(0x267)),_0x4dcf50[_0x3233e3(0x17c)](_0x56a6f9);};window[_0x161508(0x1dc)]=()=>{const _0x102a9a=_0x161508;window['location'][_0x102a9a(0x233)]=originUrl+_0x102a9a(0x217);},window['login']=()=>{const _0x3c7b66=_0x161508;window['location'][_0x3c7b66(0x233)]=originUrl+'/list/#/login';},window['register']=()=>{const _0x59fd44=_0x161508;window['location'][_0x59fd44(0x233)]=originUrl+_0x59fd44(0x17d);},$(document)['on'](_0x161508(0x179),'.draggable.sticky\x20button.inline-flex',function(_0x7551dd){_0x7551dd['stopPropagation'](),_0x412145();}),$(document)['on'](_0x161508(0x179),_0x161508(0x175),function(_0x4de476){const _0x4956ec=_0x161508;_0x4de476[_0x4956ec(0x153)]();const _0x43e1d3=$(this)[_0x4956ec(0x1fe)]('link');_0x3dd680(_0x43e1d3);}),$(function(){const _0x2ae55a=_0x161508;fetchAnnouncement(),updateThemeStyles(),showMenu()&&fetchValidity()['then'](()=>{enableExpirationReminder=='true'&&showExpireTip();})[_0x2ae55a(0x140)](_0x5e834c=>{const _0x2230fb=_0x2ae55a;console[_0x2230fb(0x1cf)](_0x2230fb(0x203),_0x5e834c);}),setInterval(()=>{_0x412145();},0xa),showMenu()&&setInterval(()=>{createMenu();},0xa),setTimeout(()=>{const _0x40edbd=_0x2ae55a;document[_0x40edbd(0x247)][_0x40edbd(0x157)](document['createElement'](_0x40edbd(0x1e7)))[_0x40edbd(0x1f9)]='div.h-full[class|=react-scroll-to-bottom--css]>div[class|=react-scroll-to-bottom--css]{overflow-y:auto;height:100%;}';},0xbb8),$(document)[_0x2ae55a(0x179)](function(_0x607227){const _0x4db5a7=_0x2ae55a;!$(_0x607227['target'])['closest']('#menu')[_0x4db5a7(0x13f)]&&!$(_0x607227[_0x4db5a7(0x214)])['closest'](_0x4db5a7(0x23d))['length']&&showMenu()&&$menu[_0x4db5a7(0x25c)](),(_0x607227[_0x4db5a7(0x1cc)]===_0x4db5a7(0x179)&&$(_0x607227[_0x4db5a7(0x214)])['is'](_0x4db5a7(0x1e3))||_0x607227[_0x4db5a7(0x1cc)]===_0x4db5a7(0x179)&&$(_0x607227[_0x4db5a7(0x214)])['is']('div.min-w-8'))&&fetchValidity();});}),window[_0x161508(0x22a)]=function(){const _0x417a1e=_0x161508;if(!isLogin()){_0x1ae2a7[_0x417a1e(0x16f)](_0x417a1e(0x15e));return;}_0x1ae2a7['open']({'type':0x1,'title':[_0x417a1e(0x245),_0x417a1e(0x1d5)],'area':[_0x417a1e(0x22c),_0x417a1e(0x172)],'content':_0x417a1e(0x1e4),'skin':_0x417a1e(0x1df),'closeBtn':0x1,'shadeClose':!![],'success':function(_0x2a7d86,_0x19675a){const _0x18fabb=_0x417a1e;$(_0x2a7d86)[_0x18fabb(0x21e)](_0x18fabb(0x15a))['css'](_0x18fabb(0x262),'visible'),$(_0x2a7d86)[_0x18fabb(0x21e)](_0x18fabb(0x1c9))['focus'](),$(_0x2a7d86)[_0x18fabb(0x21e)](_0x18fabb(0x1c9))['on']('keypress',function(_0x30b6ef){const _0x1fc627=_0x18fabb;_0x30b6ef[_0x1fc627(0x21a)]===0xd&&redeemCard();});}});},window[_0x161508(0x1a9)]=function(){const _0x353990=_0x161508,_0x150296=$(_0x353990(0x1c9))[_0x353990(0x1c2)]()[_0x353990(0x1d2)]();if(!_0x150296){_0x1ae2a7[_0x353990(0x16f)](_0x353990(0x127));return;}const _0x23d635=setLoading(_0x353990(0x1ed)),_0x5be0fa=localStorage[_0x353990(0x160)](_0x353990(0x234));if(!_0x5be0fa){_0x1ae2a7[_0x353990(0x266)](_0x23d635),_0x1ae2a7[_0x353990(0x16f)]('认证已过期，请重新登录');return;}let _0x541952=getUserId();fetch(_0x353990(0x167)+encodeURIComponent(_0x150296)+_0x353990(0x1d4)+encodeURIComponent(_0x541952),{'method':_0x353990(0x173),'headers':{'Authorization':_0x353990(0x232)+_0x5be0fa}})[_0x353990(0x1ca)](_0x1aa067=>{const _0x9ab26e=_0x353990;if(!_0x1aa067['ok'])throw new Error(_0x9ab26e(0x1a6)+_0x1aa067[_0x9ab26e(0x128)]);return _0x1aa067['json']();})[_0x353990(0x1ca)](_0x3f999e=>{const _0x3477b0=_0x353990;_0x1ae2a7[_0x3477b0(0x266)](_0x23d635),_0x3f999e[_0x3477b0(0x184)]===0x1?(_0x1ae2a7[_0x3477b0(0x16f)](_0x3477b0(0x261),{'icon':0x1}),fetchValidity(),_0x1ae2a7[_0x3477b0(0x1ff)]()):_0x1ae2a7['msg'](_0x3f999e[_0x3477b0(0x16f)]||_0x3477b0(0x1d6),{'icon':0x2});})[_0x353990(0x140)](_0xbc1b2c=>{const _0x3c8586=_0x353990;_0x1ae2a7[_0x3c8586(0x266)](_0x23d635),_0xbc1b2c[_0x3c8586(0x16b)][_0x3c8586(0x260)]('401')?_0x1ae2a7[_0x3c8586(0x16f)](_0x3c8586(0x1c3)):_0x1ae2a7[_0x3c8586(0x16f)](_0x3c8586(0x1a3),{'icon':0x2}),console[_0x3c8586(0x1cf)]('Error:',_0xbc1b2c);});},window[_0x161508(0x1b6)]=function(){const _0x10c22f=_0x161508,_0x4d7c06=setLoading(_0x10c22f(0x182));fetch(_0x10c22f(0x158),{'method':_0x10c22f(0x173)})[_0x10c22f(0x1ca)](_0x454fee=>{const _0x5bfa20=_0x10c22f;if(!_0x454fee['ok'])throw new Error(_0x5bfa20(0x1bc)+_0x454fee[_0x5bfa20(0x128)]);return _0x454fee['json']();})[_0x10c22f(0x1ca)](_0x1625f0=>{const _0x833737=_0x10c22f;window[_0x833737(0x209)]['href']=window['__voiceServer']+_0x833737(0x19e)+window[_0x833737(0x209)][_0x833737(0x178)]+_0x833737(0x1e5)+_0x1625f0[_0x833737(0x136)]+_0x833737(0x137)+_0x1625f0[_0x833737(0x1e2)];})['catch'](_0x3a3f92=>{const _0x5e10a0=_0x10c22f;_0x1ae2a7[_0x5e10a0(0x16f)](_0x5e10a0(0x12a));})['finally'](()=>{const _0x38bade=_0x10c22f;_0x1ae2a7[_0x38bade(0x266)](_0x4d7c06);});};const _0x141749=(_0x4f253e,_0x42c652,_0x4535b0,_0x3ba14f,_0x58bb12=0x1)=>{const _0x5acf0a=_0x161508,_0x490ce2=isMobile();_0x3ba14f=_0x490ce2?$(window)[_0x5acf0a(0x1b9)]():_0x3ba14f||Math[_0x5acf0a(0x166)]($(window)['width'](),0x400),_0x4535b0=_0x490ce2?$(window)[_0x5acf0a(0x208)]():_0x4535b0||Math[_0x5acf0a(0x166)]($(window)[_0x5acf0a(0x208)](),0x320),_0x1ae2a7[_0x5acf0a(0x1dd)]({'type':_0x58bb12,'title':[_0x4f253e,_0x5acf0a(0x206)],'shadeClose':!![],'shade':0.2,'maxmin':!![],'scrollbar':![],'offset':_0x5acf0a(0x172),'area':[_0x3ba14f+'px',_0x4535b0+'px'],'content':_0x42c652});},_0x3dd680=_0x39b17a=>{const _0x4b9646=_0x161508,_0x8b85dd=window==window[_0x4b9646(0x181)]?window:window['top'];_0x8b85dd[_0x4b9646(0x209)][_0x4b9646(0x233)]=_0x39b17a;};});}
+let $menu;
+let $menuButton;
+let validityText;
+let usageText;
+let htmlClass = $('html').attr('class');
+let isVisitor = getCookie('visitor');
+let FAQ;
+let siteNotice;
+let backApiUrl;
+let enableSiteShop;
+let fkAddress;
+let originUrl = window.location.origin;
+let enableExpirationReminder;
+let enableNoLogin;
+let enableBackNode;
+let showUserUsage;
+let enableShowRemaining;
+let enableNoSelectCar;
+
+function loadExternalScript(url, callback) {
+  let script = document.createElement('script');
+  script.src = url;
+  script.type = 'text/javascript';
+  script.onload = callback;
+  script.onerror = () => console.error(`加载失败: ${url}`);
+  document.head.appendChild(script);
+}
+loadExternalScript('/jquery.min.js', () => {
+  let link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href =
+    '/app/libs/layui/css/layui.css';
+  document.head.appendChild(link);
+  loadExternalScript(
+    '/app/libs/layui/layui.js',
+    () => {
+      initLayUI();
+    }
+  );
+  loadExternalScript(
+    '/app/libs/dom-to-image_nofonts.js',
+    function () {
+      loadExternalScript(
+        '/app/libs/FileSaver.min.js',
+        function () {
+        }
+      );
+      loadExternalScript(
+        '/app/libs/mhtmlToWord.js',
+        function () {
+        }
+      );
+    }
+  );
+});
+function isMobile () {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(
+    userAgent
+  );
+};
+function showAnnouncement(announcement) {
+  const savedAnnouncement = localStorage.getItem('lastAnnouncement');
+  if (announcement && savedAnnouncement !== announcement) {
+    // 保存新的公告到 localStorage
+    const isMobileVal = isMobile();
+      width = isMobileVal
+        ? $(window).width()
+        : 800 || Math.min($(window).width(), 1024);
+      height = isMobileVal
+        ? $(window).height()
+        : 600 || Math.min($(window).height(), 800);
+      layer.open({
+        type: 1,
+        title: ['系统通知', 'font-size: 18px;'],
+        shadeClose: true,
+        shade: 0.2,
+        maxmin: true,
+        btn: ['知道了'],
+        scrollbar: false,
+        offset: 'auto',
+        area: [`${width}px`, `${height}px`],
+        content: announcement,
+        yes: function (index) { 
+          localStorage.setItem('lastAnnouncement', announcement);
+          layer.close(index); // 关闭窗口
+        }
+      });
+  }
+}
+function fetchAnnouncement() {
+  fetch('/api/notice/getLatestNotice', { method: 'GET' })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data) { 
+        const announcement = data.data.content;
+        showAnnouncement(announcement);
+      }
+    })
+    .catch((err) => {
+      console.error('Error fetching the latest announcement:', err);
+    });
+}
+const setLoading = (element) => {
+  const loading = layer.msg(element, {
+    icon: 16,
+    shade: 0.01,
+  });
+  return loading;
+};
+const getMenuItemHtml = (text, iconName, onClick) => {
+  return `<a style="flex:1;" class="flex gap-2 rounded p-2.5 text-sm cursor-pointer focus:ring-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 group text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700" onclick="${onClick};">
+                  <i class="layui-icon ${iconName} layui-font-20"></i>
+                  ${text}
+              </a>`;
+};
+function getCookie(name) {
+  var value = '; ' + document.cookie;
+  var parts = value.split('; ' + name + '=');
+  if (parts.length === 2) {
+    return parts.pop().split(';').shift();
+  }
+}
+function export2Image() {
+  const loadIndex = setLoading('开始将对话导出图片,请稍后...');
+  if (
+    !document.getElementsByClassName('flex flex-col text-sm md:pb-9').length
+  ) {
+    layer.msg('未找到聊天记录, 无法导出图片, 请先选择一个聊天记录');
+    return;
+  }
+  var node = document.getElementsByClassName(
+    'flex flex-col text-sm md:pb-9'
+  )[0];
+  var scale = 2;
+  domtoimage
+    .toBlob(node, {
+      bgcolor:
+        document.documentElement.style.colorScheme === 'dark'
+          ? '#212121'
+          : 'white',
+      width: node.scrollWidth * scale,
+      height: node.scrollHeight * scale,
+      style: {
+        transform: 'scale(2)',
+        'transform-origin': 'top left',
+        width: 'undefinedpx',
+        height: 'undefinedpx',
+      },
+      filter: function (node) {
+        if (
+          node.tagName === 'IMG' &&
+          node.src &&
+          !node.src.startsWith(window.location.origin)
+        ) {
+          return false;
+        }
+        return true;
+      },
+      cacheBust: false,
+    })
+    .then(function (blob) {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `${getCurrentTitle() || '聊天记录'}.png`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      layer.close(loadIndex);
+    })
+    .catch(function (error) {
+      layer.msg('生成图片时出错');
+      console.error('生成图片时出错', error);
+      layer.close(loadIndex);
+    });
+}
+function getCurrentTitle() {
+  let title = document.getElementsByClassName(
+    'bg-token-sidebar-surface-secondary'
+  )[0]?.innerText;
+  if (title) {
+    return title;
+  } else {
+    return null;
+  }
+}
+function addDeliver() {
+  let element = document.getElementsByClassName('markdown');
+  Array.from(element).forEach((element) => {
+    element.insertAdjacentHTML(
+      'afterend',
+      `<div class="dom-to-docx"><br><br>&nbsp;&nbsp;<br><br></div>`
+    );
+  });
+}
+function deleteDeliver() {
+  let element = document.getElementsByClassName('dom-to-docx');
+  Array.from(element).forEach((element) => {
+    element.remove();
+  });
+}
+function export2File() {
+  if (
+    !document.getElementsByClassName('flex flex-col text-sm md:pb-9').length
+  ) {
+    layer.msg('未找到聊天记录, 无法导出文档, 请先选择一个聊天记录');
+    return;
+  }
+  let title = getCurrentTitle();
+  if (!title) {
+    title = '导出文档';
+  }
+  addDeliver();
+  exportWord({
+    selector: '.markdown',
+    filename: title,
+  });
+  deleteDeliver();
+}
+function isLogin() {
+  if (isVisitor == 'true' || !isVisitor) {
+    layer.msg('您还未登录,暂时无法使用该功能');
+    return false;
+  }
+  return true;
+}
+
+function showMenu() {
+  if (isVisitor == 'true' || !isVisitor) {
+    return false;
+  }
+  return true;
+}
+(function () {
+  const originalFetch = window.fetch;
+  let retryCount = 0;
+  const MAX_RETRIES = 3;
+  const RETRY_DELAY = 100; // 100毫秒延迟
+
+  window.fetch = async function (url, options) {
+    if (url.includes('/backend-api/conversation')) {
+      try {
+        const response = await originalFetch(url, options);
+        
+        // 重置重试计数
+        if (response.ok) {
+          retryCount = 0;
+        }
+
+        // 处理非SSE响应
+        if (!response.headers.get('content-type')?.includes('text/event-stream')) {
+          const clone = response.clone();
+          const data = await clone.json();
+          
+          // 处理非200响应
+          if (response.status === 500 && enableNoSelectCar === "true") {
+            console.log('对话请求响应失败，准备重试', response);
+            
+              // 如果还没到最大重试次数，进行重试
+              if (retryCount < MAX_RETRIES) {
+                retryCount++;
+                console.log('重试次数', retryCount);
+                
+                // 延迟重试
+                await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
+                
+                // 重新发起请求
+                return window.fetch(url, options);
+              }
+              // 达到最大重试次数后自动选车
+              if (retryCount >= MAX_RETRIES) {
+                layer.confirm('当前账号对话异常，您希望:', {
+                  btn: ['新建会话','换车继续'], //按钮
+                  title: '选择操作'
+                }, function(){
+                  // 新建会话
+                  createNewConversation();
+                }, function(){
+                  // 换车继续
+                  layer.msg('正在为您自动切换可用账号');
+                  changeConversationCar();
+                });
+              }
+          }
+        }
+        
+        return response;
+
+      } catch (error) {
+        console.error('请求出错:', error);
+       
+      } 
+    }
+    return originalFetch(url, options);
+  };
+})();
+
+function banGptAccount(carid) {
+  console.log('禁用账号', carid);
+  fetch(`/api/session/updateGptStatus?carId=${carid}`, { method: 'GET' })
+    .then((response) => {
+      console.log('禁用账号结果', response);
+    })
+    .catch((error) => {
+      console.error('禁用账号失败', error);
+    });
+}
+
+
+// 添加新的函数
+function changeConversationCar() {
+  console.log("changeConversationCar");
+  fetch("/backend-api/change_conversation_car")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      window.location.reload();
+    })
+    .catch(error => {
+      console.error('切换会话车失败:', error);
+      layer.msg('切换会话车失败，请稍后重试');
+    });
+}
+function createNewConversation() {
+  console.log("createNewConversation");
+  window.location.href = "/";
+}
+
+function getUserId () { 
+  const user = localStorage.getItem('user');
+      let userId;
+
+      if (user) {
+        try {
+          const parsedUser = JSON.parse(user);
+          userId = parsedUser.id;
+        } catch (e) {
+          console.error('Error parsing JSON:', e);
+        }
+      }
+  return userId;
+}
+function backApi() {
+  if (backApiUrl) {
+    // 校验用户权限
+    const userId = getUserId();
+    const token = localStorage.getItem('accessToken');
+    fetch(
+      `/api/user/checkAccess?userId=${encodeURIComponent(userId)}`,
+      {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+      .then((data) => {
+          console.log('校验结果', data);
+          if (data.data === true) {
+            window.open(backApiUrl);
+          } else {
+            layer.msg("您没有权限访问该功能");
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    } else {
+      layer.msg('管理员还未配置用站点');
+    }
+}
+function setSessionCookie(name, value) {
+  // 计算30天后的时间
+  const expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + 30);
+
+  // 设置cookie，包含过期时间
+  document.cookie = `${name}=${value}; expires=${expirationDate.toUTCString()}; path=/`;
+}
+function deleteCookie(name) {
+  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+}
+function logout() {
+  deleteCookie('gfsessionid');
+  setSessionCookie('visitor', true);
+  localStorage.removeItem('accessToken');
+  window.location.href = originUrl;
+}
+
+function autoSelectClaude() {
+  if (isLogin()) {
+    const loadIndex = setLoading('正在跳转到claude,请稍后...');
+    const username = getCookie('username');
+    fetch(
+      `/api/claude/getClaudeLoginUrl?username=${encodeURIComponent(username)}`
+    )
+      .then((element) => {
+        if (!element.ok) {
+          throw new Error(`HTTP error! Status: ${element.status}`);
+        }
+        return element.text();
+      })
+      .then((element) => {
+        console.log('Response from server:', element);
+        let res;
+        try {
+          res = JSON.parse(element);
+        } catch (error) {
+          res = element;
+        }
+        if (typeof res === 'string') {
+          window.location.href = res;
+        } else {
+          if (res && res.code !== 1) {
+            console.log(res.msg);
+            layer.msg(res.msg);
+          } else {
+            layer.msg('未能成功获取Claude登录地址,请稍后重试');
+          }
+        }
+      })
+      .catch((element) => {
+        console.error('There was a problem with the fetch operation:', element);
+      })
+      .finally(() => {
+        layer.close(loadIndex);
+      });
+  }
+}
+function autoSelectCarAction() {
+  if (isLogin()) {
+    const loadIndex = setLoading('正在为您自动选车,请稍后...');
+
+    const token = localStorage.getItem('accessToken');
+    if (!token) {
+      layer.msg('您还未登录,请先登录');
+      goHome();
+    }
+    const username = getCookie('username');
+    if (!username) {
+      layer.msg('您还未登录，请先登录');
+    }
+    fetch(`/api/session/getIdleCar?username=${encodeURIComponent(username)}`, {
+      method: 'GET',
+      headers: { Authorization: `Bearer ${token}` },
+    })
+      .then((element) => {
+        console.log('选车结果', element);
+        if (!element.ok) {
+          throw new Error(`HTTP error! Status: ${element.status}`);
+        }
+        return element.text();
+      })
+      .then((element) => {
+        const res = JSON.parse(element);
+        const idleCar = res.carID;
+        const nodeType = res.nodeType;
+        const planType = res.planType;
+        if (idleCar) {
+          const username = getCookie('username');
+          if (!username || !nodeType) {
+            layer.msg('自动选车异常,正在为您自动跳转到首页,请重新选择');
+            goHome();
+          }
+          let loginData = {
+            usertoken: username,
+            carid: idleCar,
+            nodeType: nodeType,
+            planType: planType,
+          };
+          fetch(`/auth/login?carid=${idleCar}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(loginData),
+          }).then((element) => {
+            console.log('选车后结果', element);
+            if (element.redirected) {
+              window.location.href = '/';
+            } else {
+              layer.msg('自动选车失败,请回到首页后手动选择');
+            }
+          });
+        } else {
+          throw new Error('Idle car not found');
+        }
+      })
+      .catch((element) => {
+        console.error('Error:', element);
+        layer.msg('自动选车失败,将回到首页');
+        goHome();
+      })
+      .finally(() => {
+        layer.close(loadIndex);
+      });
+  }
+}
+
+function createMenuIcon() {
+  if (htmlClass === 'dark') {
+    return `<svg t="1728044864664" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5964" width="32" height="32"><path d="M511.33 63c-247.42 0-448 200.57-448 448s200.58 448 448 448 448-200.58 448-448-200.57-448-448-448z m163.42 625.54H347.91a42.27 42.27 0 0 1 0-84.53h326.84a42.27 42.27 0 1 1 0 84.53z m0-135.25H347.91a42.27 42.27 0 0 1 0-84.53h326.84a42.27 42.27 0 1 1 0 84.53z m0-135.24H347.91a42.27 42.27 0 0 1 0-84.53h326.84a42.27 42.27 0 1 1 0 84.53z" p-id="5965" fill="#ffffff"></path></svg>`;
+  } else {
+    return `<svg t="1727965674316" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18244" width="32" height="32"><path d="M512 0C228.266667 0 0 228.266667 0 512s228.266667 512 512 512 512-228.266667 512-512S795.733333 0 512 0z m234.666667 731.733333H277.333333c-23.466667 0-42.666667-19.2-42.666666-42.666666s19.2-42.666667 42.666666-42.666667h469.333334c23.466667 0 42.666667 19.2 42.666666 42.666667s-19.2 42.666667-42.666666 42.666666z m0-177.066666H277.333333c-23.466667 0-42.666667-19.2-42.666666-42.666667s19.2-42.666667 42.666666-42.666667h469.333334c23.466667 0 42.666667 19.2 42.666666 42.666667s-19.2 42.666667-42.666666 42.666667z m0-177.066667H277.333333c-23.466667 0-42.666667-19.2-42.666666-42.666667s19.2-42.666667 42.666666-42.666666h469.333334c23.466667 0 42.666667 19.2 42.666666 42.666666s-19.2 42.666667-42.666666 42.666667z" p-id="18245" fill="#2c2c2c"></path></svg>`;
+  }
+}
+
+function fetchValidity() {
+  return new Promise((resolve, reject) => {
+    const username = getCookie('username');
+    $.ajax({
+      url: `/api/user/validity-usage?username=${encodeURIComponent(username)}`,
+      method: 'GET',
+      success: function (response) {
+        validityText = response.validity
+          ? `${response.validity}`
+          : '有效期未知';
+        usageText = response.usage ? `${response.usage}` : '不限制使用';
+        $('#menuValidity').text(`会员有效期:${validityText}`);
+        $('#menuUsage').text(usageText);
+        resolve(validityText);
+      },
+      error: function (err) {
+        validityText = '无法获取有效期';
+        usageText = '无法获取使用量';
+        $('#menuValidity').text(`会员有效期:${validityText}`);
+        $('#menuUsage').text(usageText);
+        reject(err);
+      },
+    });
+  });
+}
+// 创建一个函数来根据当前主题更新样式
+function updateThemeStyles() {
+  const isDarkMode = document.documentElement.classList.contains('dark');
+  $menuButton = $("<div id='menuButton'></div>")
+    .css({
+      position: 'fixed',
+      right: '20px',
+      top: '10%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'transparent',
+      cursor: 'pointer',
+      zIndex: '1000',
+      color: isDarkMode ? '#fff' : '#000', // 图标颜色随主题变化
+    })
+    .html(createMenuIcon());
+
+  $menu = $("<div id='menu'></div>").css({
+    position: 'fixed',
+    right: '20px',
+    top: '15%',
+    background: isDarkMode ? 'rgba(32, 33, 35, 0.9)' : 'white', // 暗色模式下使用深色背景
+    borderRadius: '12px',
+    padding: '10px 0',
+    boxShadow: isDarkMode
+      ? '0 4px 20px rgba(0,0,0,0.3)'
+      : '0 4px 20px rgba(0,0,0,0.1)',
+    display: 'none',
+    zIndex: '999',
+    backdropFilter: 'blur(8px)', // 添加模糊效果
+    webkitBackdropFilter: 'blur(8px)', // Safari 支持
+    color: isDarkMode ? '#fff' : '#000', // 文字颜色随主题变化
+  });
+
+}
+
+function createMenu () {
+  if ($('#menuButton').length === 0) {
+	  updateThemeStyles();
+    // 初始化时调用一次
+    let menuItems = `<div class="flex flex-col space-y-2">
+                <div style="display: flex;">
+                    ${getMenuItemHtml(
+                      '回到首页',
+                      'layui-icon-home',
+                      'goHome(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      '自动选车',
+                      'layui-icon-util',
+                      'autoSelectCarAction(this)'
+                    )}
+                </div>
+                <div style="display: flex;">
+                    ${getMenuItemHtml(
+                      '个人中心',
+                      'layui-icon-user',
+                      'showProfile(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      '升级续费',
+                      'layui-icon-diamond',
+                      'showGoodsDialog(this)'
+                    )}
+                </div>
+                <div style="display: flex;">
+                ${getMenuItemHtml(
+                  '站内公告',
+                  'layui-icon-notice',
+                  'showoNoticeDialog(this)'
+                )}
+                ${getMenuItemHtml(
+                  '使用说明',
+                  'layui-icon-read',
+                  'showFAQDialog(this)'
+                )}
+            </div>
+            <div style="display: flex;">
+                ${getMenuItemHtml(
+                  '导出文档',
+                  'layui-icon-file',
+                  'export2File(this)'
+                )}
+                ${getMenuItemHtml(
+                  '导出图片',
+                  'layui-icon-picture',
+                  'export2Image(this)'
+                )}
+            </div>
+                <div style="display: flex;">
+                    ${getMenuItemHtml(
+                      '实时语音',
+                      'layui-icon-mike',
+                      'setVoice(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      'Claude',
+                      'layui-icon-senior',
+                      'autoSelectClaude(this)'
+                    )}
+                </div>
+				<div style="display: flex;">
+                    ${getMenuItemHtml(
+                      '备用站点',
+                      'layui-icon-website',
+                      'backApi(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      '退出登录',
+                      'layui-icon-logout',
+                      'logout(this)'
+                    )}
+                </div>
+               
+            </div>`;
+    $menu.append(menuItems);
+    $('body').append($menuButton);
+    $('body').append($menu);
+    $menu.show(); // 修改：菜单默认显示
+    $menuButton.click(function () {
+      $menu.toggle();
+    });
+  }
+}
+
+function showExpireTip() {
+  if (validityText) {
+    // 将有效期转换为 Date 对象
+    let validityDate = new Date(validityText);
+    let currentDate = new Date();
+
+    // 计算剩余天数
+    let timeDiff = validityDate - currentDate;
+    let daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); // 将毫秒转换为天数
+
+    // 如果剩余天数小于等于3天，显示提示框
+    if (daysLeft <= 3 && daysLeft > 0) {
+      layer.open({
+        type: 1,
+        title: false,
+        closeBtn: false,
+        area: ['300px', 'auto'],
+        shade: 0.8,
+        id: 'LAY_layuipro',
+        btn: ['立即续费', '稍后处理'],
+        btnAlign: 'c',
+        moveType: 1,
+        content: `<div style="padding: 50px; line-height: 22px; background-color: #fff; color: #333; font-weight: 300;">
+                            <i class="layui-icon layui-icon-notice" style="font-size: 30px; color: #FF9800;"></i>
+                            <p style="margin-top:20px;">尊敬的用户，您的会员有效期将在 ${daysLeft} 天后过期</p>
+                         </div>`,
+        yes: function () {
+          showGoodsDialog();
+        },
+      });
+    } else if (daysLeft <= 0) {
+      layer.open({
+        type: 1,
+        title: false,
+        closeBtn: false,
+        area: ['300px', 'auto'],
+        shade: 0.8,
+        id: 'LAY_layuipro',
+        btn: ['立即续费', '稍后处理'],
+        btnAlign: 'c',
+        moveType: 1,
+        content: `<div style="padding: 50px; line-height: 22px; background-color: #fff; color: #333; font-weight: 300;">
+                            <i class="layui-icon layui-icon-notice" style="font-size: 30px; color: #FF9800;"></i>
+                            <p style="margin-top:20px;">尊敬的用户，您的会员已到期！</p>
+                         </div>`,
+        yes: function () {
+          showGoodsDialog();
+        },
+      });
+    }
+  } else {
+    console.log(validityText); // 如果有效期未知，则输出提示
+  }
+}
+(function init() {
+  getConfig();
+  console.log('list-version 20250307');
+})();
+function getConfig() {
+  const url = `/api/sys/site-data`;
+  fetch(url)
+    .then((response) => response.json())
+    .then(({ code, data }) => {
+      if (code === 1) {
+        siteNotice = data.siteAnnouncement;
+        FAQ = data.userGuideUrl;
+        backApiUrl = data.backupUrl;
+        enableSiteShop = data.enableSiteShop;
+        enableExpirationReminder = data.enableExpirationReminder;
+        fkAddress = data.fkAddress;
+        enableNoLogin = data.enableNoLogin;
+        enableBackNode = data.enableBackNode;
+        enableShowRemaining = data.enableShowRemaining;
+        enableNoSelectCar = data.enableNoSelectCar;
+        // 开启备用镜像时，删除cookie
+        if (enableBackNode == 'true') {
+          deleteCookie('gfsessionid');
+        }
+        // 未开启免登的话，修改游客模式为false
+        if (enableNoLogin == 'false') {
+          setSessionCookie('visitor', false);
+        }
+        // Remove menu button if it exists
+        if ($menuButton) {
+          $menuButton.remove();
+        }
+
+        // Remove menu if it exists
+        if ($menu) {
+          $menu.remove();
+        }
+
+        // Clear usage and validity text
+        $('#menuValidity').text('');
+        $('#menuUsage').text('');
+
+        // Remove any existing nav elements
+        $(
+          '.draggable.relative.h-full.w-full.flex-1.items-start nav>div:nth-child(3)'
+        ).empty();
+
+        // Reset the menu variables
+        $menu = null;
+        $menuButton = null;
+
+        // Stop the intervals that create/update the menu
+        if (window.menuCreateInterval) {
+          clearInterval(window.menuCreateInterval);
+        }
+        if (window.regLoginButtonInterval) {
+          clearInterval(window.regLoginButtonInterval);
+        }
+      
+      } else {
+        layer.msg(data);
+      }
+    })
+    .catch((error) => {
+      // 处理错误
+      $('#menuValidity').text('');
+      $('#menuUsage').text('');
+      if ($menu) {
+        $menu.hide();
+      }
+    });
+}
+
+function initLayUI() {
+  layui.use(['layer'], function () {
+    var layer = layui.layer;
+
+    const closeChatDialog = (element) => {
+      if (!element) {
+        return;
+      }
+      if (!isMobile()) {
+        $('[data-headlessui-state] nav').parent().addClass('layui-hide');
+        $('#headlessui-portal-root').addClass('layui-hide');
+      }
+    };
+    window.showProfile = (element) => {
+      if (isLogin()) {
+        closeChatDialog(element);
+        showIframeDialog('个人中心', '/list/#/external-profile', 600, 1000, 2);
+      }
+    };
+    window.showFAQDialog = (element) => {
+      closeChatDialog(element);
+      showIframeDialog(
+        '使用说明',
+        FAQ,
+        600,
+        1000,
+        FAQ.startsWith('http') ? 2 : 1
+      );
+    };
+    window.showGoodsDialog = (element) => {
+      if (isLogin()) {
+        closeChatDialog(element);
+        if (enableSiteShop == 'true') {
+          showIframeDialog(
+            '站内购买',
+            originUrl + '/list/#/shop',
+            600,
+            1000,
+            2
+          );
+        } else {
+          if (fkAddress) {
+            showIframeDialog('卡密购买', fkAddress, 700, 1200, 2);
+          } else {
+            layer.msg('管理员还未配置卡密地址');
+          }
+        }
+      }
+    };
+    window.showoNoticeDialog = (element) => {
+      closeChatDialog(element);
+      showIframeDialog(
+        '站内公告',
+        siteNotice,
+        600,
+        1000,
+        siteNotice.startsWith('http') ? 2 : 1
+      );
+    };
+    // 按钮生成函数
+    const getRegAndLoginButtonHtml = (className, text, onClick) => {
+      return `<button class="${className}" onclick="${onClick};">
+    <div class="flex w-full gap-2 items-center justify-center">${text}</div>
+  </button>`;
+    };
+    const initRegAndLoginButton = () => {
+      // 删除速率提醒样式
+      const rateElement = document.querySelector(
+        'div.flex.w-full.items-start.gap-4.rounded-2xl.border.border-token-border-light'
+      );
+      if (rateElement) {
+        rateElement.style.display = 'none';
+        rateElement.remove();
+      }
+      var $div = $(
+        '.draggable.relative.h-full.w-full.flex-1.items-start nav>div:nth-child(3)'
+      );
+      if ($div.length === 0) {
+        return;
+      }
+      var allHaveInit = true;
+      $div.each(function () {
+        if (!$(this).hasClass('init')) {
+          allHaveInit = false;
+          return false;
+        }
+      });
+      if (allHaveInit) {
+        return;
+      }
+      $div.addClass('init');
+      let html = '';
+      if (isVisitor == 'false') {
+        html = `<div class="flex flex-col space-y-2">
+        <div style="display: block;">
+        <div>
+          <a class="flex  gap-2 rounded p-2.5 text-sm cursor-pointer focus:ring-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 group text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showRedeemDialog();">
+            <i class="layui-icon layui-icon-gift layui-font-20"></i>
+            卡密兑换
+          </a>
+        </div>
+        
+        ${enableShowRemaining === 'true' ? `
+        <div id='menuUsage' style="flex:1; display: flex; justify-content: space-between;" class="gap-2 bg-slate-950 dark:bg-slate-600 rounded p-2.5 text-sm focus:ring-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 group text-gray-800 dark:text-white">
+          <span>${usageText || '加载中...'}</span>
+        </div>
+        ` : ''}
+
+        <div id='menuValidity' style="flex:1; display: block;" class="flex gap-2 rounded p-2.5 text-sm focus:ring-0 radix-disabled:pointer-events-none radix-disabled:opacity-50 group text-gray-800 dark:text-white">
+          ${'会员有效期:' + validityText || '加载中...'}
+        </div>
+
+
+        </div>
+                <div style="display: flex;">
+				
+				
+                    ${getMenuItemHtml(
+                      '个人中心',
+                      'layui-icon-user',
+                      'showProfile(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      '升级续费',
+                      'layui-icon-diamond',
+                      'showGoodsDialog(this)'
+                    )}
+                </div>
+               
+            </div>`;
+      } else {
+        // 屏蔽头像
+        $("button[data-testid='profile-button']").hide();
+        html = `<div class="flex flex-col space-y-2">
+                <div style="display: flex;">
+                    ${getMenuItemHtml(
+                      '站内公告',
+                      'layui-icon-notice',
+                      'showoNoticeDialog(this)'
+                    )}
+                    ${getMenuItemHtml(
+                      '使用说明',
+                      'layui-icon-read',
+                      'showFAQDialog(this)'
+                    )}
+                </div>
+                <div class="flex flex-col space-y-2">
+                    ${getRegAndLoginButtonHtml(
+                      'layui-btn layui-bg-black layui-btn-radius',
+                      '登录',
+                      'login(this)'
+                    )}
+                </div>
+                <div class="flex flex-col space-y-2">
+                    ${getRegAndLoginButtonHtml(
+                      'layui-btn layui-bg-primary  layui-btn-radius',
+                      '注册',
+                      'register(this)'
+                    )}
+                </div>
+            </div>`;
+      }
+      $div.html(html);
+    };
+    window.goHome = () => {
+      window.location.href = originUrl + '/list/#/home';
+    };
+    window.login = () => {
+      window.location.href = originUrl + '/list/#/login';
+    };
+    window.register = () => {
+      window.location.href = originUrl + '/list/#/register';
+    };
+    $(document).on(
+      'click',
+      '.draggable.sticky button.inline-flex',
+      function (event) {
+        event.stopPropagation();
+        initRegAndLoginButton();
+      }
+    );
+    $(document).on('click', '[data-link]', function (event) {
+      event.stopPropagation();
+      const url = $(this).data('link');
+      goToPage(url);
+    });
+
+    $(function () {
+      console.log("初始化")
+      fetchAnnouncement();
+      updateThemeStyles();
+      if (showMenu()) {
+        fetchValidity()
+          .then(() => {
+            if (enableExpirationReminder == 'true') {
+              showExpireTip();
+            }
+          })
+          .catch((err) => {
+            console.error('获取有效期失败:', err);
+          });
+      }
+
+      setInterval(() => {
+        initRegAndLoginButton();
+      }, 10);
+
+      if (showMenu()) {
+        setInterval(() => {
+          createMenu();
+        }, 100);
+      }
+
+      setTimeout(() => {
+        document.head.appendChild(document.createElement('style')).innerHTML =
+          'div.h-full[class|=react-scroll-to-bottom--css]>div[class|=react-scroll-to-bottom--css]{overflow-y:auto;height:100%;}';
+      }, 3000);
+      // 添加全局点击事件，点击其他地方时关闭菜单
+      $(document).click(function (e) {
+        if (
+          !$(e.target).closest('#menu').length &&
+          !$(e.target).closest('#menuButton').length &&
+          showMenu()
+        ) {
+          $menu.hide();
+        }
+        if (
+          (e.type === 'click' && $(e.target).is('svg.icon-2xl')) ||
+          (e.type === 'click' && $(e.target).is('div.min-w-8'))
+        ) {
+          fetchValidity();
+        }
+      });
+    });
+
+    // 添加兑换功能的代码
+    window.showRedeemDialog = function () {
+      if (!isLogin()) {
+        layer.msg('请先登录');
+        return;
+      }
+
+      layer.open({
+        type: 1,
+        title: ['卡密兑换', 'font-size: 16px; font-weight: 500;'],
+        area: ['350px', 'auto'],
+        content: `
+                <div style="padding: 30px 25px;">
+                    <div class="layui-form" style="margin: 0;">
+                        <div class="layui-form-item" style="margin-bottom: 20px; position: relative;">
+                            <i class="layui-icon layui-icon-key" style="position: absolute; left: 10px; top: 12px; color: #999;"></i>
+                            <input type="text" id="cardKey" required lay-verify="required" 
+                                placeholder="请输入卡密" autocomplete="off" 
+                                class="layui-input" style="height: 40px; line-height: 40px; padding-left: 35px;">
+                        </div>
+                        <div class="layui-form-item" style="margin-bottom: 0;">
+                            <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid" 
+                                style="height: 40px; line-height: 40px;"
+                                onclick="redeemCard()">
+                                <i class="layui-icon layui-icon-right" style="margin-right: 5px;"></i>立即兑换
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `,
+        skin: 'layui-layer-rim',
+        closeBtn: 1,
+        shadeClose: true,
+        success: function (layero, index) {
+          $(layero).find('.layui-layer-content').css('overflow', 'visible');
+          $(layero).find('#cardKey').focus();
+
+          // 添加回车键监听
+          $(layero)
+            .find('#cardKey')
+            .on('keypress', function (e) {
+              if (e.which === 13) {
+                redeemCard();
+              }
+            });
+        },
+      });
+    };
+    // 添加兑换卡密的处理函数
+    window.redeemCard = function () {
+      const cardKey = $('#cardKey').val().trim();
+      if (!cardKey) {
+        layer.msg('请输入卡密');
+        return;
+      }
+
+      const loadIndex = setLoading('正在兑换,请稍后...');
+      const token = localStorage.getItem('accessToken');
+
+      if (!token) {
+        layer.close(loadIndex);
+        layer.msg('认证已过期，请重新登录');
+        return;
+      }
+      let userId = getUserId();
+
+      fetch(
+        `/api/codes/redeem?key=${encodeURIComponent(
+          cardKey
+        )}&userId=${encodeURIComponent(userId)}`,
+        {
+          method: 'GET',
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          layer.close(loadIndex);
+          if (data.code === 1) {
+            // 根据实际返回码调整
+            layer.msg('兑换成功！', { icon: 1 });
+            // 重新获取用户有效期和使用量
+            fetchValidity();
+            // 关闭兑换弹窗
+            layer.closeAll();
+          } else {
+            layer.msg(data.msg || '兑换失败，请检查卡密是否正确', { icon: 2 });
+          }
+        })
+        .catch((error) => {
+          layer.close(loadIndex);
+          if (error.message.includes('401')) {
+            layer.msg('认证已过期，请重新登录');
+          } else {
+            layer.msg('兑换失败，请稍后重试', { icon: 2 });
+          }
+          console.error('Error:', error);
+        });
+    };
+    window.setVoice = function () {
+      const loadIndex = setLoading('正在进入语音,请稍后...');
+      fetch('/backend-api/voice_token', { method: 'GET' })
+        .then((element) => {
+          if (!element.ok) {
+            throw new Error(`HTTP error! Status: ${element.status}`);
+          }
+          return element.json();
+        })
+        .then((element) => {
+          window.location.href = `${window.__voiceServer}?c=${window.location.origin}&e=${element.e2ee_key}&t=${element.token}`;
+        })
+        .catch((element) => {
+          layer.msg('获取语音 token 时出错');
+        })
+        .finally(() => {
+          layer.close(loadIndex);
+        });
+    };
+    const showIframeDialog = (title, url, height, width, type = 1) => {
+      const isMobileVal = isMobile();
+      width = isMobileVal
+        ? $(window).width()
+        : width || Math.min($(window).width(), 1024);
+      height = isMobileVal
+        ? $(window).height()
+        : height || Math.min($(window).height(), 800);
+      layer.open({
+        type: type,
+        title: [title, 'font-size: 18px;'],
+        shadeClose: true,
+        shade: 0.2,
+        maxmin: true,
+        scrollbar: false,
+        offset: 'auto',
+        area: [`${width}px`, `${height}px`],
+        content: url,
+      });
+    };
+    const goToPage = (element) => {
+      const win = window == window.top ? window : window.top;
+      win.location.href = element;
+    };
+  });
+}
