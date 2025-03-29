@@ -98,7 +98,7 @@ function fetchAnnouncement() {
     })
     .then((data) => {
       if (data) { 
-        const announcement = data.data.content;
+        const announcement = data?.data?.content;
         showAnnouncement(announcement);
       }
     })
@@ -236,69 +236,7 @@ function showMenu() {
   }
   return true;
 }
-(function () {
-  const originalFetch = window.fetch;
-  let retryCount = 0;
-  const MAX_RETRIES = 3;
-  const RETRY_DELAY = 100; // 100毫秒延迟
 
-  window.fetch = async function (url, options) {
-    if (url.includes('/backend-api/conversation')) {
-      try {
-        const response = await originalFetch(url, options);
-        
-        // 重置重试计数
-        if (response.ok) {
-          retryCount = 0;
-        }
-
-        // 处理非SSE响应
-        if (!response.headers.get('content-type')?.includes('text/event-stream')) {
-          const clone = response.clone();
-          const data = await clone.json();
-          
-          // 处理非200响应
-          if (response.status === 500 && enableNoSelectCar === "true") {
-            console.log('对话请求响应失败，准备重试', response);
-            
-              // 如果还没到最大重试次数，进行重试
-              if (retryCount < MAX_RETRIES) {
-                retryCount++;
-                console.log('重试次数', retryCount);
-                
-                // 延迟重试
-                await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
-                
-                // 重新发起请求
-                return window.fetch(url, options);
-              }
-              // 达到最大重试次数后自动选车
-              if (retryCount >= MAX_RETRIES) {
-                layer.confirm('当前账号对话异常，您希望:', {
-                  btn: ['新建会话','换车继续'], //按钮
-                  title: '选择操作'
-                }, function(){
-                  // 新建会话
-                  createNewConversation();
-                }, function(){
-                  // 换车继续
-                  layer.msg('正在为您自动切换可用账号');
-                  changeConversationCar();
-                });
-              }
-          }
-        }
-        
-        return response;
-
-      } catch (error) {
-        console.error('请求出错:', error);
-       
-      } 
-    }
-    return originalFetch(url, options);
-  };
-})();
 
 function banGptAccount(carid) {
   console.log('禁用账号', carid);
@@ -311,7 +249,87 @@ function banGptAccount(carid) {
     });
 }
 
+(function () {
+    const originalFetch = window.fetch;
+    let retryCount = 0;
+    const MAX_RETRIES = 3;
+    const RETRY_DELAY = 100; // 100毫秒延迟
 
+    window.fetch = async function (url, options) {
+        if(typeof url == "object") {
+            return originalFetch(url, options);
+        }
+        if (url.includes('/backend-api/conversation')) {
+            try {
+                const response = await originalFetch(url, options);
+                
+                // 重置重试计数
+                if (response.ok) {
+                    retryCount = 0;
+                }
+
+                // 处理非SSE响应
+                if (!response.headers.get('content-type')?.includes('text/event-stream')) {
+                    const clone = response.clone();
+                    const data = await clone.json();
+                    
+                    // 处理非200响应
+                    if (response.status === 500 && enableNoSelectCar === "true") {
+                        console.log('对话请求响应失败，准备重试', response);
+                        
+                        // 如果还没到最大重试次数，进行重试
+                        if (retryCount < MAX_RETRIES) {
+                            retryCount++;
+                            console.log('重试次数', retryCount);
+                            
+                            // 延迟重试
+                            await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
+                            
+                            // 重新发起请求
+                            return window.fetch(url, options);
+                        }
+                        
+                        // 达到最大重试次数后自动选车
+                        if (retryCount >= MAX_RETRIES) {
+                            layer.confirm('当前账号对话异常，您希望:', {
+                                btn: ['新建会话', '换车继续'],
+                                title: '选择操作'
+                            }, function() {
+                                // 新建会话
+                                createNewConversation();
+                            }, function() {
+                                // 换车继续
+                                layer.msg('正在为您自动切换可用账号');
+                                changeConversationCar();
+                            });
+                        }
+                    }
+                }
+                return response;
+            } catch (error) {
+                console.error('请求出错:', error);
+                return originalFetch(url, options);
+            }
+        }
+        
+        if (url===`${originUrl}/backend-api/me`) {
+            try {
+                const response = await originalFetch(url, options);
+                console.log("账号状态:", response.status);
+                
+                if (response.status === 401) {
+                    layer.msg("当前账号异常，请回到首页或者点击自动选车");
+                    banGptAccount(getCookie('carid'));
+                }
+                return response;
+            } catch (error) {
+                console.error('请求出错:', error);
+            }
+        }
+        
+        return originalFetch(url, options);
+    };
+})();
 // 添加新的函数
 function changeConversationCar() {
   console.log("changeConversationCar");
@@ -721,7 +739,7 @@ function showExpireTip() {
 }
 (function init() {
   getConfig();
-  console.log('list-version 20250307');
+  console.log('list-version 202503280921');
 })();
 function getConfig() {
   const url = `/api/sys/site-data`;
@@ -1134,23 +1152,16 @@ function initLayUI() {
         });
     };
     window.setVoice = function () {
-      const loadIndex = setLoading('正在进入语音,请稍后...');
-      fetch('/backend-api/voice_token', { method: 'GET' })
-        .then((element) => {
-          if (!element.ok) {
-            throw new Error(`HTTP error! Status: ${element.status}`);
-          }
-          return element.json();
-        })
-        .then((element) => {
-          window.location.href = `${window.__voiceServer}?c=${window.location.origin}&e=${element.e2ee_key}&t=${element.token}`;
-        })
-        .catch((element) => {
-          layer.msg('获取语音 token 时出错');
-        })
-        .finally(() => {
-          layer.close(loadIndex);
-        });
+        // 如果是移动端，修改UA为PC端
+        // if (isMobile()) {
+        //   layer.msg("手机端还未")
+        //   return
+        // }
+        if($('[data-testid="composer-speech-button"]').length < 1) {
+            layer.msg("语音组件加载中，请稍后")
+            return
+        }
+      $('[data-testid="composer-speech-button"]')[0].click();
     };
     const showIframeDialog = (title, url, height, width, type = 1) => {
       const isMobileVal = isMobile();
