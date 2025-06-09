@@ -18,6 +18,9 @@
 
 ## 文档不经常更新，请以演示站为准。
 
+# sass 版本
+https://github.com/seven2202/chatgpt-share-server-expander-sass
+
 # 功能优势
 - 支持邮箱注册、登录、找回密码
 - 支持多种节点划分：免费、4o、plus、claude节点、api节点
