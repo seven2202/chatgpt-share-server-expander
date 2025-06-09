@@ -18,7 +18,7 @@
 
 ## 文档不经常更新，请以演示站为准。
 
-# sass 版本
+# sass 版本（ui和功能上的提升）
 https://github.com/seven2202/chatgpt-share-server-expander-sass
 
 # 功能优势
